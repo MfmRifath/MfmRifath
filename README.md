@@ -20,16 +20,19 @@
 ---
 
 ### 💬 **Ask me about**
-- **Flutter, Dart, React, SpringBoot**
+- ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=flutter&logoColor=white)
+- ![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
+- ![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white)
+- ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 
 ### 📫 **How to reach me**:
-- [mmfmrifath@gmail.com](mailto:mmfmrifath@gmail.com)
+- [![Email](https://img.shields.io/badge/Gmail-%23D14836.svg?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mmfmrifath@gmail.com)
 
 ---
 
 <h3 align="center" style="font-size: 1.2em; color: #444;">Connect with me:</h3>
 <p align="center">
-  <a href="https://www.linkedin.com/in/rifath-mohammed-b3987a31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+  <a href="https://www.linkedin.com/in/rifath-mohammed-b3987a31a" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://fb.com/mfm-rifath-mfmr" target="_blank">
@@ -59,7 +62,6 @@
   <a href="https://www.mysql.com" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="50" height="50"/>
   </a>
-  <!-- Add more tools as needed -->
 </div>
 
 ---
