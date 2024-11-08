@@ -1,6 +1,6 @@
-<img align="center" alt="Coding" width="1000" src="https://github.com/MfmRifath/MfmRifath/blob/main/futurism-perspective-digital-nomads-lifestyle.jpg" />
+<img align="center" alt="Coding" width="100%" src="https://github.com/MfmRifath/MfmRifath/blob/main/futurism-perspective-digital-nomads-lifestyle.jpg" />
 
-<h1 align="center" style="font-size: 3em; color: #6c63ff; font-family: 'Poppins', sans-serif;">
+<h1 align="center" style="font-size: 3em; font-family: 'Poppins', sans-serif; color: #6c63ff;">
   Hi 👋, I'm Rifath MFM
 </h1>
 <h3 align="center" style="font-size: 1.5em; color: #555;">
@@ -8,29 +8,39 @@
 </h3>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=mfmrifath&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=mfmrifath&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
 </p>
 
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=mfmrifath&theme=onedark&no-frame=true&margin-w=10" alt="GitHub Trophies" />
+    <img src="https://github-profile-trophy.vercel.app/?username=mfmrifath&theme=algolia&no-frame=true&margin-w=15&margin-h=15" alt="GitHub Trophies" />
   </a>
 </p>
 
 ---
 
 ### 💬 **Ask me about**
-- ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=flutter&logoColor=white)
-- ![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
-- ![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white)
-- ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-
-### 📫 **How to reach me**:
-- [![Email](https://img.shields.io/badge/Gmail-%23D14836.svg?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mmfmrifath@gmail.com)
+<div align="center">
+  <p style="display: flex; justify-content: center; gap: 10px;">
+    <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+    <img src="https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
+    <img src="https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+    <img src="https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Boot" />
+  </p>
+</div>
 
 ---
 
-<h3 align="center" style="font-size: 1.2em; color: #444;">Connect with me:</h3>
+### 📫 **How to reach me**:
+<p align="center">
+  <a href="mailto:mmfmrifath@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-%23D14836.svg?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+</p>
+
+---
+
+<h3 align="center">🌐 Connect with me:</h3>
 <p align="center">
   <a href="https://www.linkedin.com/in/rifath-mohammed-b3987a31a" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -45,8 +55,8 @@
 
 ---
 
-<h3 align="left">Languages and Tools:</h3>
-<div align="center">
+<h3 align="center">🛠️ Languages and Tools:</h3>
+<div align="center" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
   <a href="https://flutter.dev" target="_blank" rel="noreferrer">
     <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter" width="50" height="50"/>
   </a>
@@ -62,11 +72,12 @@
   <a href="https://www.mysql.com" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="50" height="50"/>
   </a>
+  <!-- Add more tools as necessary -->
 </div>
 
 ---
 
-<h3 align="center" style="font-size: 1.2em; color: #444;">GitHub Stats:</h3>
+<h3 align="center" style="font-size: 1.2em; color: #444;">📊 GitHub Stats:</h3>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=mfmrifath&show_icons=true&theme=tokyonight" alt="GitHub Stats"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=mfmrifath&theme=tokyonight" alt="GitHub Streak Stats"/>
@@ -83,8 +94,8 @@
 ---
 
 ### 🚀 **Projects**
-- 📱 [MathsWithUsama](https://github.com/MfmRifath/MathsWithUsama)
-- 🛒 [Zing E-commerce App](https://github.com/MfmRifath/ZingApp)
+- 📱 [MathsWithUsama](https://github.com/MfmRifath/MathsWithUsama)  
+- 🛒 [Zing E-commerce App](https://github.com/MfmRifath/ZingApp)  
 
 ---
 
