@@ -98,8 +98,7 @@
   <img src="https://github-readme-stats.vercel.app/api?username=mfmrifath&show_icons=true&theme=tokyonight" alt="GitHub Stats"/>
 </p>
 <p align="center">
-  <img src="![Streak Stats](https://github-readme-streak-stats.herokuapp.com?user=mfmrifath&theme=tokyonight)
-" alt="GitHub Streak Stats"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=mfmrifath&theme=tokyonight" alt="GitHub Streak Stats"/>
 </p>
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=mfmrifath&theme=tokyo-night" alt="Activity Graph" />
