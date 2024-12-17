@@ -10,7 +10,10 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=mfmrifath&label=Profile%20views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
 </p>
-
+### 📊 **Top Languages**
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mfmrifath&layout=compact&theme=tokyonight" alt="Top Languages"/>
+</p>
 <p align="center">
   <a href="https://github-profile-trophy.vercel.app/?username=mfmrifath">
     <img src="https://github-profile-trophy.vercel.app/?username=mfmrifath&theme=algolia&no-frame=true&margin-w=15&margin-h=15" alt="GitHub Trophies" />
