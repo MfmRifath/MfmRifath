@@ -4,7 +4,7 @@
   Hi 👋, I'm Rifath MFM
 </h1>
 <h3 align="center" style="font-size: 1.5em; color: #555;">
-  Passionate Full Stack Web & Mobile App Developer from Sri Lanka
+  AI Engineer | Mobile App Developer | Cybersecurity
 </h3>
 
 <p align="center">
