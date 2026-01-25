@@ -1,4 +1,4 @@
-<img align="center" alt="Coding" width="100%" src="https://github.com/MfmRifath/MfmRifath/blob/main/futurism-perspective-digital-nomads-lifestyle.jpg" />
+<img align="center" alt="Coding" width="100%" src="https://github.com/MfmRifath/MfmRifath/blob/main/vibes.jpeg" />
 
 <h1 align="center" style="font-size: 3em; font-family: 'Poppins', sans-serif; color: #6c63ff;">
   Hi 👋, I'm Rifath MFM
