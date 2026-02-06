@@ -49,8 +49,8 @@ class Rifath:
         self.name       = "Rifath MFM"
         self.role       = "Software Engineer & AI Researcher"
         self.education  = "BSc Software Engineering — University of Ruhuna 🇱🇰"
-        self.focus      = ["AI/ML", "Mobile Development", "Cybersecurity"]
-        self.currently  = "Building AI Tuition Master — intelligent tutoring for A/L Physics"
+        self.focus      = ["AI Agentic Workflows", "LLM Fine-Tuning & RAG", "Mobile Dev", "Cybersecurity"]
+        self.currently  = "Building AI Tuition Master — intelligent tutoring with LangGraph & RAG"
         self.fun_fact   = "I treat bugs like puzzles, not problems 🧩"
 
     def say_hi(self):
@@ -66,7 +66,7 @@ me.say_hi()
 
 | 🔭 Working on | 🧠 Learning | 💬 Ask me about | 🎯 Goal |
 |:---:|:---:|:---:|:---:|
-| AI Tuition Master | LLM Fine-tuning & RAG | Flutter, AI/ML, Security | Build tech for education equity |
+| AI Tuition Master | Agentic Workflows · LangGraph · AutoGen | Flutter, LLMs, RAG, Security | Build tech for education equity |
 
 </div>
 
@@ -125,8 +125,19 @@ me.say_hi()
       <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
       <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
       <img src="https://img.shields.io/badge/🤗_HuggingFace-FFD21E?style=flat-square" />
-      <img src="https://img.shields.io/badge/🦜_LangChain-1C3C3C?style=flat-square" />
       <img src="https://img.shields.io/badge/Llama-0467DF?style=flat-square&logo=meta&logoColor=white" />
+      <img src="https://img.shields.io/badge/RAG-FF4B4B?style=flat-square&logo=elasticsearch&logoColor=white" />
+      <img src="https://img.shields.io/badge/Fine--Tuning_(QLoRA)-8A2BE2?style=flat-square" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>🤖 AI Agents</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/🦜_LangChain-1C3C3C?style=flat-square" />
+      <img src="https://img.shields.io/badge/🕸️_LangGraph-1C3C3C?style=flat-square" />
+      <img src="https://img.shields.io/badge/OpenAI_SDK-412991?style=flat-square&logo=openai&logoColor=white" />
+      <img src="https://img.shields.io/badge/AutoGen-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
+      <img src="https://img.shields.io/badge/Agentic_Workflows-FF6F00?style=flat-square&logo=apacheairflow&logoColor=white" />
     </td>
   </tr>
   <tr>
@@ -193,7 +204,7 @@ me.say_hi()
 | 02 | [**🛒 Zing E-commerce**](https://github.com/MfmRifath/ZingApp) | Full-stack shopping app — secure payments, real-time cart, dynamic inventory management | `React` `Node.js` | ✅ Live |
 | 03 | [**📝 Nova Science**](https://github.com/MfmRifath/NovaScience) | Scientific content aggregation with peer review workflows & categorized article publishing | `Django` `Python` | ✅ Live |
 | 04 | [**🍔 Calorie Tracker**](https://github.com/MfmRifath/CalorieTrackerApp) | Health monitoring — intake vs burn calculation, local SQL persistence, custom analytics charts | `Flutter` `SQL` | ✅ Live |
-| 05 | [**🧠 AI Tuition Master**](https://github.com/MfmRifath) | Intelligent tutoring for Tamil-medium A/L Physics — fine-tuned LLMs, RAG, Bayesian Knowledge Tracing | `Python` `Llama` `LangChain` | 🔨 WIP |
+| 05 | [**🧠 AI Tuition Master**](https://github.com/MfmRifath) | Intelligent tutoring for Tamil-medium A/L Physics — fine-tuned LLMs, RAG, agentic workflows with LangGraph | `Python` `Llama` `LangGraph` `OpenAI` | 🔨 WIP |
 
 </div>
 
@@ -223,6 +234,7 @@ me.say_hi()
 │  📝  FYP: AI Tuition Master — AI-powered tutoring system            │
 │      → Fine-tuned Llama via QLoRA on Tamil physics content          │
 │      → RAG pipeline for contextual knowledge retrieval              │
+│      → Agentic workflows with LangGraph & OpenAI SDK                │
 │      → Bayesian Knowledge Tracing for adaptive learning             │
 │      → Multimodal support for physics diagrams                      │
 │                                                                     │
@@ -289,7 +301,7 @@ me.say_hi()
 💬  Languages          :  Tamil · English · Sinhala
 📧  Reach me at        :  mmfmrifath@gmail.com
 ⚡  Currently building :  AI Tuition Master (FYP)
-🌱  Learning           :  LLM Fine-tuning · Spring Boot · RAG Systems
+🌱  Learning           :  Agentic Workflows · LangGraph · AutoGen · OpenAI SDK
 🤝  Open to            :  Collaborations on AI/ML & EdTech projects
 ```
 
