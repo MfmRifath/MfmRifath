@@ -1,0 +1,49 @@
+name: Generate Stats Cards
+
+on:
+  schedule:
+    - cron: "17 2 * * *" # daily, off-peak
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/gen_stats.py
+      - .github/workflows/stats.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render cards
+        env:
+          # GITHUB_TOKEN covers public data. Set a METRICS_TOKEN secret (classic
+          # PAT, read:user + repo) if you want private contributions counted too.
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python scripts/gen_stats.py --out assets/generated
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/generated
+          if git diff --staged --quiet; then
+            echo "No stat changes."
+          else
+            git commit -m "chore: refresh generated stat cards [skip ci]"
+            git push
+          fi
