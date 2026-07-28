@@ -1,0 +1,424 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1173 190" width="1173" height="190" fill="none" role="img" aria-label="&gt; contrib --calendar">
+  <defs>
+    <style>
+      @keyframes rise { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+      @keyframes sweep { from { transform:translateX(-260px); } to { transform:translateX(1213px); } }
+      @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:.15; } }
+      .rise { opacity:0; animation: rise .55s cubic-bezier(.2,.8,.2,1) forwards; }
+      .sweep { animation: sweep 5s linear infinite; }
+      .blink { animation: blink 1.5s steps(1,end) infinite; }
+      @keyframes pop { from { transform:scale(.35); } to { transform:scale(1); } } .cell { transform-box:fill-box; transform-origin:center; animation: pop .4s ease-out backwards; }
+      @media (prefers-reduced-motion: reduce) {
+        .rise, .sweep, .blink, .grow, .cell { animation: none; }
+        .rise, .cell { opacity:1; transform:none; }
+        .grow { transform: scaleX(1); }
+      }
+    </style>
+    <linearGradient id="cy" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#7c4dff"/>
+    </linearGradient>
+    <linearGradient id="swp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.4" fill="#0a1430" opacity=".55"/>
+    </pattern>
+    <filter id="neon" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card"><rect width="1173" height="190" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+    <rect width="1173" height="190" fill="#05060f"/>
+    <rect class="blink" x="22" y="21" width="9" height="9" fill="#00f0ff" filter="url(#neon)"/>
+    <text x="42" y="30" font-size="13" font-weight="700" letter-spacing="2.5" fill="#00f0ff" filter="url(#neon)">&gt; contrib --calendar</text>
+    <rect x="22" y="44" width="1129" height="1.4" fill="url(#cy)" opacity=".55"/>
+
+    <rect class="cell" x="32" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:0ms"><title>2025-07-27: 0 contributions</title></rect>
+    <rect class="cell" x="32" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:6ms"><title>2025-07-28: 0 contributions</title></rect>
+    <rect class="cell" x="32" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:12ms"><title>2025-07-29: 0 contributions</title></rect>
+    <rect class="cell" x="32" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:18ms"><title>2025-07-30: 0 contributions</title></rect>
+    <rect class="cell" x="32" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:24ms"><title>2025-07-31: 0 contributions</title></rect>
+    <rect class="cell" x="32" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:30ms"><title>2025-08-01: 0 contributions</title></rect>
+    <rect class="cell" x="32" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:36ms"><title>2025-08-02: 0 contributions</title></rect>
+    <rect class="cell" x="53" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:14ms"><title>2025-08-03: 0 contributions</title></rect>
+    <rect class="cell" x="53" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:20ms"><title>2025-08-04: 0 contributions</title></rect>
+    <rect class="cell" x="53" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:26ms"><title>2025-08-05: 0 contributions</title></rect>
+    <rect class="cell" x="53" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:32ms"><title>2025-08-06: 0 contributions</title></rect>
+    <rect class="cell" x="53" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:38ms"><title>2025-08-07: 0 contributions</title></rect>
+    <rect class="cell" x="53" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:44ms"><title>2025-08-08: 0 contributions</title></rect>
+    <rect class="cell" x="53" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:50ms"><title>2025-08-09: 0 contributions</title></rect>
+    <rect class="cell" x="74" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:28ms"><title>2025-08-10: 0 contributions</title></rect>
+    <rect class="cell" x="74" y="83" width="17" height="17" rx="3" fill="#7c4dff" opacity="0.66" style="animation-delay:34ms"><title>2025-08-11: 5 contributions</title></rect>
+    <rect class="cell" x="74" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:40ms"><title>2025-08-12: 0 contributions</title></rect>
+    <rect class="cell" x="74" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:46ms"><title>2025-08-13: 0 contributions</title></rect>
+    <rect class="cell" x="74" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:52ms"><title>2025-08-14: 0 contributions</title></rect>
+    <rect class="cell" x="74" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:58ms"><title>2025-08-15: 0 contributions</title></rect>
+    <rect class="cell" x="74" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:64ms"><title>2025-08-16: 0 contributions</title></rect>
+    <rect class="cell" x="95" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:42ms"><title>2025-08-17: 0 contributions</title></rect>
+    <rect class="cell" x="95" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:48ms"><title>2025-08-18: 0 contributions</title></rect>
+    <rect class="cell" x="95" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:54ms"><title>2025-08-19: 0 contributions</title></rect>
+    <rect class="cell" x="95" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:60ms"><title>2025-08-20: 0 contributions</title></rect>
+    <rect class="cell" x="95" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:66ms"><title>2025-08-21: 0 contributions</title></rect>
+    <rect class="cell" x="95" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:72ms"><title>2025-08-22: 0 contributions</title></rect>
+    <rect class="cell" x="95" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:78ms"><title>2025-08-23: 0 contributions</title></rect>
+    <rect class="cell" x="116" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:56ms"><title>2025-08-24: 0 contributions</title></rect>
+    <rect class="cell" x="116" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:62ms"><title>2025-08-25: 0 contributions</title></rect>
+    <rect class="cell" x="116" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:68ms"><title>2025-08-26: 0 contributions</title></rect>
+    <rect class="cell" x="116" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:74ms"><title>2025-08-27: 0 contributions</title></rect>
+    <rect class="cell" x="116" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:80ms"><title>2025-08-28: 0 contributions</title></rect>
+    <rect class="cell" x="116" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:86ms"><title>2025-08-29: 0 contributions</title></rect>
+    <rect class="cell" x="116" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:92ms"><title>2025-08-30: 0 contributions</title></rect>
+    <rect class="cell" x="137" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:70ms"><title>2025-08-31: 0 contributions</title></rect>
+    <rect class="cell" x="137" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:76ms"><title>2025-09-01: 0 contributions</title></rect>
+    <rect class="cell" x="137" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:82ms"><title>2025-09-02: 0 contributions</title></rect>
+    <rect class="cell" x="137" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:88ms"><title>2025-09-03: 0 contributions</title></rect>
+    <rect class="cell" x="137" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:94ms"><title>2025-09-04: 0 contributions</title></rect>
+    <rect class="cell" x="137" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:100ms"><title>2025-09-05: 0 contributions</title></rect>
+    <rect class="cell" x="137" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:106ms"><title>2025-09-06: 0 contributions</title></rect>
+    <rect class="cell" x="158" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:84ms"><title>2025-09-07: 0 contributions</title></rect>
+    <rect class="cell" x="158" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:90ms"><title>2025-09-08: 0 contributions</title></rect>
+    <rect class="cell" x="158" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:96ms"><title>2025-09-09: 0 contributions</title></rect>
+    <rect class="cell" x="158" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:102ms"><title>2025-09-10: 0 contributions</title></rect>
+    <rect class="cell" x="158" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:108ms"><title>2025-09-11: 0 contributions</title></rect>
+    <rect class="cell" x="158" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:114ms"><title>2025-09-12: 0 contributions</title></rect>
+    <rect class="cell" x="158" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:120ms"><title>2025-09-13: 0 contributions</title></rect>
+    <rect class="cell" x="179" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:98ms"><title>2025-09-14: 0 contributions</title></rect>
+    <rect class="cell" x="179" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:104ms"><title>2025-09-15: 0 contributions</title></rect>
+    <rect class="cell" x="179" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:110ms"><title>2025-09-16: 0 contributions</title></rect>
+    <rect class="cell" x="179" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:116ms"><title>2025-09-17: 0 contributions</title></rect>
+    <rect class="cell" x="179" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:122ms"><title>2025-09-18: 0 contributions</title></rect>
+    <rect class="cell" x="179" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:128ms"><title>2025-09-19: 0 contributions</title></rect>
+    <rect class="cell" x="179" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:134ms"><title>2025-09-20: 0 contributions</title></rect>
+    <rect class="cell" x="200" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:112ms"><title>2025-09-21: 0 contributions</title></rect>
+    <rect class="cell" x="200" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:118ms"><title>2025-09-22: 0 contributions</title></rect>
+    <rect class="cell" x="200" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:124ms"><title>2025-09-23: 0 contributions</title></rect>
+    <rect class="cell" x="200" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:130ms"><title>2025-09-24: 0 contributions</title></rect>
+    <rect class="cell" x="200" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:136ms"><title>2025-09-25: 0 contributions</title></rect>
+    <rect class="cell" x="200" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:142ms"><title>2025-09-26: 0 contributions</title></rect>
+    <rect class="cell" x="200" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:148ms"><title>2025-09-27: 0 contributions</title></rect>
+    <rect class="cell" x="221" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:126ms"><title>2025-09-28: 0 contributions</title></rect>
+    <rect class="cell" x="221" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:132ms"><title>2025-09-29: 0 contributions</title></rect>
+    <rect class="cell" x="221" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:138ms"><title>2025-09-30: 0 contributions</title></rect>
+    <rect class="cell" x="221" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:144ms"><title>2025-10-01: 0 contributions</title></rect>
+    <rect class="cell" x="221" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:150ms"><title>2025-10-02: 0 contributions</title></rect>
+    <rect class="cell" x="221" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:156ms"><title>2025-10-03: 0 contributions</title></rect>
+    <rect class="cell" x="221" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:162ms"><title>2025-10-04: 0 contributions</title></rect>
+    <rect class="cell" x="242" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:140ms"><title>2025-10-05: 0 contributions</title></rect>
+    <rect class="cell" x="242" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:146ms"><title>2025-10-06: 0 contributions</title></rect>
+    <rect class="cell" x="242" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:152ms"><title>2025-10-07: 0 contributions</title></rect>
+    <rect class="cell" x="242" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:158ms"><title>2025-10-08: 0 contributions</title></rect>
+    <rect class="cell" x="242" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:164ms"><title>2025-10-09: 0 contributions</title></rect>
+    <rect class="cell" x="242" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:170ms"><title>2025-10-10: 0 contributions</title></rect>
+    <rect class="cell" x="242" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:176ms"><title>2025-10-11: 0 contributions</title></rect>
+    <rect class="cell" x="263" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:154ms"><title>2025-10-12: 0 contributions</title></rect>
+    <rect class="cell" x="263" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:160ms"><title>2025-10-13: 0 contributions</title></rect>
+    <rect class="cell" x="263" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:166ms"><title>2025-10-14: 0 contributions</title></rect>
+    <rect class="cell" x="263" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:172ms"><title>2025-10-15: 0 contributions</title></rect>
+    <rect class="cell" x="263" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:178ms"><title>2025-10-16: 0 contributions</title></rect>
+    <rect class="cell" x="263" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:184ms"><title>2025-10-17: 0 contributions</title></rect>
+    <rect class="cell" x="263" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:190ms"><title>2025-10-18: 0 contributions</title></rect>
+    <rect class="cell" x="284" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:168ms"><title>2025-10-19: 0 contributions</title></rect>
+    <rect class="cell" x="284" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:174ms"><title>2025-10-20: 0 contributions</title></rect>
+    <rect class="cell" x="284" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:180ms"><title>2025-10-21: 0 contributions</title></rect>
+    <rect class="cell" x="284" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:186ms"><title>2025-10-22: 0 contributions</title></rect>
+    <rect class="cell" x="284" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:192ms"><title>2025-10-23: 0 contributions</title></rect>
+    <rect class="cell" x="284" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:198ms"><title>2025-10-24: 0 contributions</title></rect>
+    <rect class="cell" x="284" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:204ms"><title>2025-10-25: 0 contributions</title></rect>
+    <rect class="cell" x="305" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:182ms"><title>2025-10-26: 0 contributions</title></rect>
+    <rect class="cell" x="305" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:188ms"><title>2025-10-27: 0 contributions</title></rect>
+    <rect class="cell" x="305" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:194ms"><title>2025-10-28: 0 contributions</title></rect>
+    <rect class="cell" x="305" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:200ms"><title>2025-10-29: 0 contributions</title></rect>
+    <rect class="cell" x="305" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:206ms"><title>2025-10-30: 0 contributions</title></rect>
+    <rect class="cell" x="305" y="167" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.52" style="animation-delay:212ms"><title>2025-10-31: 2 contributions</title></rect>
+    <rect class="cell" x="305" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:218ms"><title>2025-11-01: 0 contributions</title></rect>
+    <rect class="cell" x="326" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:196ms"><title>2025-11-02: 0 contributions</title></rect>
+    <rect class="cell" x="326" y="83" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.52" style="animation-delay:202ms"><title>2025-11-03: 2 contributions</title></rect>
+    <rect class="cell" x="326" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:208ms"><title>2025-11-04: 0 contributions</title></rect>
+    <rect class="cell" x="326" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:214ms"><title>2025-11-05: 0 contributions</title></rect>
+    <rect class="cell" x="326" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:220ms"><title>2025-11-06: 0 contributions</title></rect>
+    <rect class="cell" x="326" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:226ms"><title>2025-11-07: 0 contributions</title></rect>
+    <rect class="cell" x="326" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:232ms"><title>2025-11-08: 0 contributions</title></rect>
+    <rect class="cell" x="347" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:210ms"><title>2025-11-09: 0 contributions</title></rect>
+    <rect class="cell" x="347" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:216ms"><title>2025-11-10: 0 contributions</title></rect>
+    <rect class="cell" x="347" y="104" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.52" style="animation-delay:222ms"><title>2025-11-11: 2 contributions</title></rect>
+    <rect class="cell" x="347" y="125" width="17" height="17" rx="3" fill="#ff2bd6" opacity="1.00" filter="url(#neon)" style="animation-delay:228ms"><title>2025-11-12: 12 contributions</title></rect>
+    <rect class="cell" x="347" y="146" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.52" style="animation-delay:234ms"><title>2025-11-13: 2 contributions</title></rect>
+    <rect class="cell" x="347" y="167" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.47" style="animation-delay:240ms"><title>2025-11-14: 1 contributions</title></rect>
+    <rect class="cell" x="347" y="188" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.61" style="animation-delay:246ms"><title>2025-11-15: 4 contributions</title></rect>
+    <rect class="cell" x="368" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:224ms"><title>2025-11-16: 0 contributions</title></rect>
+    <rect class="cell" x="368" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:230ms"><title>2025-11-17: 0 contributions</title></rect>
+    <rect class="cell" x="368" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:236ms"><title>2025-11-18: 0 contributions</title></rect>
+    <rect class="cell" x="368" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:242ms"><title>2025-11-19: 0 contributions</title></rect>
+    <rect class="cell" x="368" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:248ms"><title>2025-11-20: 0 contributions</title></rect>
+    <rect class="cell" x="368" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:254ms"><title>2025-11-21: 0 contributions</title></rect>
+    <rect class="cell" x="368" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:260ms"><title>2025-11-22: 0 contributions</title></rect>
+    <rect class="cell" x="389" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:238ms"><title>2025-11-23: 0 contributions</title></rect>
+    <rect class="cell" x="389" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:244ms"><title>2025-11-24: 0 contributions</title></rect>
+    <rect class="cell" x="389" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:250ms"><title>2025-11-25: 0 contributions</title></rect>
+    <rect class="cell" x="389" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:256ms"><title>2025-11-26: 0 contributions</title></rect>
+    <rect class="cell" x="389" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:262ms"><title>2025-11-27: 0 contributions</title></rect>
+    <rect class="cell" x="389" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:268ms"><title>2025-11-28: 0 contributions</title></rect>
+    <rect class="cell" x="389" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:274ms"><title>2025-11-29: 0 contributions</title></rect>
+    <rect class="cell" x="410" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:252ms"><title>2025-11-30: 0 contributions</title></rect>
+    <rect class="cell" x="410" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:258ms"><title>2025-12-01: 0 contributions</title></rect>
+    <rect class="cell" x="410" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:264ms"><title>2025-12-02: 0 contributions</title></rect>
+    <rect class="cell" x="410" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:270ms"><title>2025-12-03: 0 contributions</title></rect>
+    <rect class="cell" x="410" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:276ms"><title>2025-12-04: 0 contributions</title></rect>
+    <rect class="cell" x="410" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:282ms"><title>2025-12-05: 0 contributions</title></rect>
+    <rect class="cell" x="410" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:288ms"><title>2025-12-06: 0 contributions</title></rect>
+    <rect class="cell" x="431" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:266ms"><title>2025-12-07: 0 contributions</title></rect>
+    <rect class="cell" x="431" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:272ms"><title>2025-12-08: 0 contributions</title></rect>
+    <rect class="cell" x="431" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:278ms"><title>2025-12-09: 0 contributions</title></rect>
+    <rect class="cell" x="431" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:284ms"><title>2025-12-10: 0 contributions</title></rect>
+    <rect class="cell" x="431" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:290ms"><title>2025-12-11: 0 contributions</title></rect>
+    <rect class="cell" x="431" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:296ms"><title>2025-12-12: 0 contributions</title></rect>
+    <rect class="cell" x="431" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:302ms"><title>2025-12-13: 0 contributions</title></rect>
+    <rect class="cell" x="452" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:280ms"><title>2025-12-14: 0 contributions</title></rect>
+    <rect class="cell" x="452" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:286ms"><title>2025-12-15: 0 contributions</title></rect>
+    <rect class="cell" x="452" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:292ms"><title>2025-12-16: 0 contributions</title></rect>
+    <rect class="cell" x="452" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:298ms"><title>2025-12-17: 0 contributions</title></rect>
+    <rect class="cell" x="452" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:304ms"><title>2025-12-18: 0 contributions</title></rect>
+    <rect class="cell" x="452" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:310ms"><title>2025-12-19: 0 contributions</title></rect>
+    <rect class="cell" x="452" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:316ms"><title>2025-12-20: 0 contributions</title></rect>
+    <rect class="cell" x="473" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:294ms"><title>2025-12-21: 0 contributions</title></rect>
+    <rect class="cell" x="473" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:300ms"><title>2025-12-22: 0 contributions</title></rect>
+    <rect class="cell" x="473" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:306ms"><title>2025-12-23: 0 contributions</title></rect>
+    <rect class="cell" x="473" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:312ms"><title>2025-12-24: 0 contributions</title></rect>
+    <rect class="cell" x="473" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:318ms"><title>2025-12-25: 0 contributions</title></rect>
+    <rect class="cell" x="473" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:324ms"><title>2025-12-26: 0 contributions</title></rect>
+    <rect class="cell" x="473" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:330ms"><title>2025-12-27: 0 contributions</title></rect>
+    <rect class="cell" x="494" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:308ms"><title>2025-12-28: 0 contributions</title></rect>
+    <rect class="cell" x="494" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:314ms"><title>2025-12-29: 0 contributions</title></rect>
+    <rect class="cell" x="494" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:320ms"><title>2025-12-30: 0 contributions</title></rect>
+    <rect class="cell" x="494" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:326ms"><title>2025-12-31: 0 contributions</title></rect>
+    <rect class="cell" x="494" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:332ms"><title>2026-01-01: 0 contributions</title></rect>
+    <rect class="cell" x="494" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:338ms"><title>2026-01-02: 0 contributions</title></rect>
+    <rect class="cell" x="494" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:344ms"><title>2026-01-03: 0 contributions</title></rect>
+    <rect class="cell" x="515" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:322ms"><title>2026-01-04: 0 contributions</title></rect>
+    <rect class="cell" x="515" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:328ms"><title>2026-01-05: 0 contributions</title></rect>
+    <rect class="cell" x="515" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:334ms"><title>2026-01-06: 0 contributions</title></rect>
+    <rect class="cell" x="515" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:340ms"><title>2026-01-07: 0 contributions</title></rect>
+    <rect class="cell" x="515" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:346ms"><title>2026-01-08: 0 contributions</title></rect>
+    <rect class="cell" x="515" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:352ms"><title>2026-01-09: 0 contributions</title></rect>
+    <rect class="cell" x="515" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:358ms"><title>2026-01-10: 0 contributions</title></rect>
+    <rect class="cell" x="536" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:336ms"><title>2026-01-11: 0 contributions</title></rect>
+    <rect class="cell" x="536" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:342ms"><title>2026-01-12: 0 contributions</title></rect>
+    <rect class="cell" x="536" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:348ms"><title>2026-01-13: 0 contributions</title></rect>
+    <rect class="cell" x="536" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:354ms"><title>2026-01-14: 0 contributions</title></rect>
+    <rect class="cell" x="536" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:360ms"><title>2026-01-15: 0 contributions</title></rect>
+    <rect class="cell" x="536" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:366ms"><title>2026-01-16: 0 contributions</title></rect>
+    <rect class="cell" x="536" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:372ms"><title>2026-01-17: 0 contributions</title></rect>
+    <rect class="cell" x="557" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:350ms"><title>2026-01-18: 0 contributions</title></rect>
+    <rect class="cell" x="557" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:356ms"><title>2026-01-19: 0 contributions</title></rect>
+    <rect class="cell" x="557" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:362ms"><title>2026-01-20: 0 contributions</title></rect>
+    <rect class="cell" x="557" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:368ms"><title>2026-01-21: 0 contributions</title></rect>
+    <rect class="cell" x="557" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:374ms"><title>2026-01-22: 0 contributions</title></rect>
+    <rect class="cell" x="557" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:380ms"><title>2026-01-23: 0 contributions</title></rect>
+    <rect class="cell" x="557" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:386ms"><title>2026-01-24: 0 contributions</title></rect>
+    <rect class="cell" x="578" y="62" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.56" style="animation-delay:364ms"><title>2026-01-25: 3 contributions</title></rect>
+    <rect class="cell" x="578" y="83" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.56" style="animation-delay:370ms"><title>2026-01-26: 3 contributions</title></rect>
+    <rect class="cell" x="578" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:376ms"><title>2026-01-27: 0 contributions</title></rect>
+    <rect class="cell" x="578" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:382ms"><title>2026-01-28: 0 contributions</title></rect>
+    <rect class="cell" x="578" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:388ms"><title>2026-01-29: 0 contributions</title></rect>
+    <rect class="cell" x="578" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:394ms"><title>2026-01-30: 0 contributions</title></rect>
+    <rect class="cell" x="578" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:400ms"><title>2026-01-31: 0 contributions</title></rect>
+    <rect class="cell" x="599" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:378ms"><title>2026-02-01: 0 contributions</title></rect>
+    <rect class="cell" x="599" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:384ms"><title>2026-02-02: 0 contributions</title></rect>
+    <rect class="cell" x="599" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:390ms"><title>2026-02-03: 0 contributions</title></rect>
+    <rect class="cell" x="599" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:396ms"><title>2026-02-04: 0 contributions</title></rect>
+    <rect class="cell" x="599" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:402ms"><title>2026-02-05: 0 contributions</title></rect>
+    <rect class="cell" x="599" y="167" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.56" style="animation-delay:408ms"><title>2026-02-06: 3 contributions</title></rect>
+    <rect class="cell" x="599" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:414ms"><title>2026-02-07: 0 contributions</title></rect>
+    <rect class="cell" x="620" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:392ms"><title>2026-02-08: 0 contributions</title></rect>
+    <rect class="cell" x="620" y="83" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.61" style="animation-delay:398ms"><title>2026-02-09: 4 contributions</title></rect>
+    <rect class="cell" x="620" y="104" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.47" style="animation-delay:404ms"><title>2026-02-10: 1 contributions</title></rect>
+    <rect class="cell" x="620" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:410ms"><title>2026-02-11: 0 contributions</title></rect>
+    <rect class="cell" x="620" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:416ms"><title>2026-02-12: 0 contributions</title></rect>
+    <rect class="cell" x="620" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:422ms"><title>2026-02-13: 0 contributions</title></rect>
+    <rect class="cell" x="620" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:428ms"><title>2026-02-14: 0 contributions</title></rect>
+    <rect class="cell" x="641" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:406ms"><title>2026-02-15: 0 contributions</title></rect>
+    <rect class="cell" x="641" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:412ms"><title>2026-02-16: 0 contributions</title></rect>
+    <rect class="cell" x="641" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:418ms"><title>2026-02-17: 0 contributions</title></rect>
+    <rect class="cell" x="641" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:424ms"><title>2026-02-18: 0 contributions</title></rect>
+    <rect class="cell" x="641" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:430ms"><title>2026-02-19: 0 contributions</title></rect>
+    <rect class="cell" x="641" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:436ms"><title>2026-02-20: 0 contributions</title></rect>
+    <rect class="cell" x="641" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:442ms"><title>2026-02-21: 0 contributions</title></rect>
+    <rect class="cell" x="662" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:420ms"><title>2026-02-22: 0 contributions</title></rect>
+    <rect class="cell" x="662" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:426ms"><title>2026-02-23: 0 contributions</title></rect>
+    <rect class="cell" x="662" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:432ms"><title>2026-02-24: 0 contributions</title></rect>
+    <rect class="cell" x="662" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:438ms"><title>2026-02-25: 0 contributions</title></rect>
+    <rect class="cell" x="662" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:444ms"><title>2026-02-26: 0 contributions</title></rect>
+    <rect class="cell" x="662" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:450ms"><title>2026-02-27: 0 contributions</title></rect>
+    <rect class="cell" x="662" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:456ms"><title>2026-02-28: 0 contributions</title></rect>
+    <rect class="cell" x="683" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:434ms"><title>2026-03-01: 0 contributions</title></rect>
+    <rect class="cell" x="683" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:440ms"><title>2026-03-02: 0 contributions</title></rect>
+    <rect class="cell" x="683" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:446ms"><title>2026-03-03: 0 contributions</title></rect>
+    <rect class="cell" x="683" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:452ms"><title>2026-03-04: 0 contributions</title></rect>
+    <rect class="cell" x="683" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:458ms"><title>2026-03-05: 0 contributions</title></rect>
+    <rect class="cell" x="683" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:464ms"><title>2026-03-06: 0 contributions</title></rect>
+    <rect class="cell" x="683" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:470ms"><title>2026-03-07: 0 contributions</title></rect>
+    <rect class="cell" x="704" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:448ms"><title>2026-03-08: 0 contributions</title></rect>
+    <rect class="cell" x="704" y="83" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.52" style="animation-delay:454ms"><title>2026-03-09: 2 contributions</title></rect>
+    <rect class="cell" x="704" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:460ms"><title>2026-03-10: 0 contributions</title></rect>
+    <rect class="cell" x="704" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:466ms"><title>2026-03-11: 0 contributions</title></rect>
+    <rect class="cell" x="704" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:472ms"><title>2026-03-12: 0 contributions</title></rect>
+    <rect class="cell" x="704" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:478ms"><title>2026-03-13: 0 contributions</title></rect>
+    <rect class="cell" x="704" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:484ms"><title>2026-03-14: 0 contributions</title></rect>
+    <rect class="cell" x="725" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:462ms"><title>2026-03-15: 0 contributions</title></rect>
+    <rect class="cell" x="725" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:468ms"><title>2026-03-16: 0 contributions</title></rect>
+    <rect class="cell" x="725" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:474ms"><title>2026-03-17: 0 contributions</title></rect>
+    <rect class="cell" x="725" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:480ms"><title>2026-03-18: 0 contributions</title></rect>
+    <rect class="cell" x="725" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:486ms"><title>2026-03-19: 0 contributions</title></rect>
+    <rect class="cell" x="725" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:492ms"><title>2026-03-20: 0 contributions</title></rect>
+    <rect class="cell" x="725" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:498ms"><title>2026-03-21: 0 contributions</title></rect>
+    <rect class="cell" x="746" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:476ms"><title>2026-03-22: 0 contributions</title></rect>
+    <rect class="cell" x="746" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:482ms"><title>2026-03-23: 0 contributions</title></rect>
+    <rect class="cell" x="746" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:488ms"><title>2026-03-24: 0 contributions</title></rect>
+    <rect class="cell" x="746" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:494ms"><title>2026-03-25: 0 contributions</title></rect>
+    <rect class="cell" x="746" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:500ms"><title>2026-03-26: 0 contributions</title></rect>
+    <rect class="cell" x="746" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:506ms"><title>2026-03-27: 0 contributions</title></rect>
+    <rect class="cell" x="746" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:512ms"><title>2026-03-28: 0 contributions</title></rect>
+    <rect class="cell" x="767" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:490ms"><title>2026-03-29: 0 contributions</title></rect>
+    <rect class="cell" x="767" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:496ms"><title>2026-03-30: 0 contributions</title></rect>
+    <rect class="cell" x="767" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:502ms"><title>2026-03-31: 0 contributions</title></rect>
+    <rect class="cell" x="767" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:508ms"><title>2026-04-01: 0 contributions</title></rect>
+    <rect class="cell" x="767" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:514ms"><title>2026-04-02: 0 contributions</title></rect>
+    <rect class="cell" x="767" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:520ms"><title>2026-04-03: 0 contributions</title></rect>
+    <rect class="cell" x="767" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:526ms"><title>2026-04-04: 0 contributions</title></rect>
+    <rect class="cell" x="788" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:504ms"><title>2026-04-05: 0 contributions</title></rect>
+    <rect class="cell" x="788" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:510ms"><title>2026-04-06: 0 contributions</title></rect>
+    <rect class="cell" x="788" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:516ms"><title>2026-04-07: 0 contributions</title></rect>
+    <rect class="cell" x="788" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:522ms"><title>2026-04-08: 0 contributions</title></rect>
+    <rect class="cell" x="788" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:528ms"><title>2026-04-09: 0 contributions</title></rect>
+    <rect class="cell" x="788" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:534ms"><title>2026-04-10: 0 contributions</title></rect>
+    <rect class="cell" x="788" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:540ms"><title>2026-04-11: 0 contributions</title></rect>
+    <rect class="cell" x="809" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:518ms"><title>2026-04-12: 0 contributions</title></rect>
+    <rect class="cell" x="809" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:524ms"><title>2026-04-13: 0 contributions</title></rect>
+    <rect class="cell" x="809" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:530ms"><title>2026-04-14: 0 contributions</title></rect>
+    <rect class="cell" x="809" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:536ms"><title>2026-04-15: 0 contributions</title></rect>
+    <rect class="cell" x="809" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:542ms"><title>2026-04-16: 0 contributions</title></rect>
+    <rect class="cell" x="809" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:548ms"><title>2026-04-17: 0 contributions</title></rect>
+    <rect class="cell" x="809" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:554ms"><title>2026-04-18: 0 contributions</title></rect>
+    <rect class="cell" x="830" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:532ms"><title>2026-04-19: 0 contributions</title></rect>
+    <rect class="cell" x="830" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:538ms"><title>2026-04-20: 0 contributions</title></rect>
+    <rect class="cell" x="830" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:544ms"><title>2026-04-21: 0 contributions</title></rect>
+    <rect class="cell" x="830" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:550ms"><title>2026-04-22: 0 contributions</title></rect>
+    <rect class="cell" x="830" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:556ms"><title>2026-04-23: 0 contributions</title></rect>
+    <rect class="cell" x="830" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:562ms"><title>2026-04-24: 0 contributions</title></rect>
+    <rect class="cell" x="830" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:568ms"><title>2026-04-25: 0 contributions</title></rect>
+    <rect class="cell" x="851" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:546ms"><title>2026-04-26: 0 contributions</title></rect>
+    <rect class="cell" x="851" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:552ms"><title>2026-04-27: 0 contributions</title></rect>
+    <rect class="cell" x="851" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:558ms"><title>2026-04-28: 0 contributions</title></rect>
+    <rect class="cell" x="851" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:564ms"><title>2026-04-29: 0 contributions</title></rect>
+    <rect class="cell" x="851" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:570ms"><title>2026-04-30: 0 contributions</title></rect>
+    <rect class="cell" x="851" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:576ms"><title>2026-05-01: 0 contributions</title></rect>
+    <rect class="cell" x="851" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:582ms"><title>2026-05-02: 0 contributions</title></rect>
+    <rect class="cell" x="872" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:560ms"><title>2026-05-03: 0 contributions</title></rect>
+    <rect class="cell" x="872" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:566ms"><title>2026-05-04: 0 contributions</title></rect>
+    <rect class="cell" x="872" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:572ms"><title>2026-05-05: 0 contributions</title></rect>
+    <rect class="cell" x="872" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:578ms"><title>2026-05-06: 0 contributions</title></rect>
+    <rect class="cell" x="872" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:584ms"><title>2026-05-07: 0 contributions</title></rect>
+    <rect class="cell" x="872" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:590ms"><title>2026-05-08: 0 contributions</title></rect>
+    <rect class="cell" x="872" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:596ms"><title>2026-05-09: 0 contributions</title></rect>
+    <rect class="cell" x="893" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:574ms"><title>2026-05-10: 0 contributions</title></rect>
+    <rect class="cell" x="893" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:580ms"><title>2026-05-11: 0 contributions</title></rect>
+    <rect class="cell" x="893" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:586ms"><title>2026-05-12: 0 contributions</title></rect>
+    <rect class="cell" x="893" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:592ms"><title>2026-05-13: 0 contributions</title></rect>
+    <rect class="cell" x="893" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:598ms"><title>2026-05-14: 0 contributions</title></rect>
+    <rect class="cell" x="893" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:604ms"><title>2026-05-15: 0 contributions</title></rect>
+    <rect class="cell" x="893" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:610ms"><title>2026-05-16: 0 contributions</title></rect>
+    <rect class="cell" x="914" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:588ms"><title>2026-05-17: 0 contributions</title></rect>
+    <rect class="cell" x="914" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:594ms"><title>2026-05-18: 0 contributions</title></rect>
+    <rect class="cell" x="914" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:600ms"><title>2026-05-19: 0 contributions</title></rect>
+    <rect class="cell" x="914" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:606ms"><title>2026-05-20: 0 contributions</title></rect>
+    <rect class="cell" x="914" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:612ms"><title>2026-05-21: 0 contributions</title></rect>
+    <rect class="cell" x="914" y="167" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.47" style="animation-delay:618ms"><title>2026-05-22: 1 contributions</title></rect>
+    <rect class="cell" x="914" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:624ms"><title>2026-05-23: 0 contributions</title></rect>
+    <rect class="cell" x="935" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:602ms"><title>2026-05-24: 0 contributions</title></rect>
+    <rect class="cell" x="935" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:608ms"><title>2026-05-25: 0 contributions</title></rect>
+    <rect class="cell" x="935" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:614ms"><title>2026-05-26: 0 contributions</title></rect>
+    <rect class="cell" x="935" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:620ms"><title>2026-05-27: 0 contributions</title></rect>
+    <rect class="cell" x="935" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:626ms"><title>2026-05-28: 0 contributions</title></rect>
+    <rect class="cell" x="935" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:632ms"><title>2026-05-29: 0 contributions</title></rect>
+    <rect class="cell" x="935" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:638ms"><title>2026-05-30: 0 contributions</title></rect>
+    <rect class="cell" x="956" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:616ms"><title>2026-05-31: 0 contributions</title></rect>
+    <rect class="cell" x="956" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:622ms"><title>2026-06-01: 0 contributions</title></rect>
+    <rect class="cell" x="956" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:628ms"><title>2026-06-02: 0 contributions</title></rect>
+    <rect class="cell" x="956" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:634ms"><title>2026-06-03: 0 contributions</title></rect>
+    <rect class="cell" x="956" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:640ms"><title>2026-06-04: 0 contributions</title></rect>
+    <rect class="cell" x="956" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:646ms"><title>2026-06-05: 0 contributions</title></rect>
+    <rect class="cell" x="956" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:652ms"><title>2026-06-06: 0 contributions</title></rect>
+    <rect class="cell" x="977" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:630ms"><title>2026-06-07: 0 contributions</title></rect>
+    <rect class="cell" x="977" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:636ms"><title>2026-06-08: 0 contributions</title></rect>
+    <rect class="cell" x="977" y="104" width="17" height="17" rx="3" fill="#7c4dff" opacity="0.71" style="animation-delay:642ms"><title>2026-06-09: 6 contributions</title></rect>
+    <rect class="cell" x="977" y="125" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.47" style="animation-delay:648ms"><title>2026-06-10: 1 contributions</title></rect>
+    <rect class="cell" x="977" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:654ms"><title>2026-06-11: 0 contributions</title></rect>
+    <rect class="cell" x="977" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:660ms"><title>2026-06-12: 0 contributions</title></rect>
+    <rect class="cell" x="977" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:666ms"><title>2026-06-13: 0 contributions</title></rect>
+    <rect class="cell" x="998" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:644ms"><title>2026-06-14: 0 contributions</title></rect>
+    <rect class="cell" x="998" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:650ms"><title>2026-06-15: 0 contributions</title></rect>
+    <rect class="cell" x="998" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:656ms"><title>2026-06-16: 0 contributions</title></rect>
+    <rect class="cell" x="998" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:662ms"><title>2026-06-17: 0 contributions</title></rect>
+    <rect class="cell" x="998" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:668ms"><title>2026-06-18: 0 contributions</title></rect>
+    <rect class="cell" x="998" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:674ms"><title>2026-06-19: 0 contributions</title></rect>
+    <rect class="cell" x="998" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:680ms"><title>2026-06-20: 0 contributions</title></rect>
+    <rect class="cell" x="1019" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:658ms"><title>2026-06-21: 0 contributions</title></rect>
+    <rect class="cell" x="1019" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:664ms"><title>2026-06-22: 0 contributions</title></rect>
+    <rect class="cell" x="1019" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:670ms"><title>2026-06-23: 0 contributions</title></rect>
+    <rect class="cell" x="1019" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:676ms"><title>2026-06-24: 0 contributions</title></rect>
+    <rect class="cell" x="1019" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:682ms"><title>2026-06-25: 0 contributions</title></rect>
+    <rect class="cell" x="1019" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:688ms"><title>2026-06-26: 0 contributions</title></rect>
+    <rect class="cell" x="1019" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:694ms"><title>2026-06-27: 0 contributions</title></rect>
+    <rect class="cell" x="1040" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:672ms"><title>2026-06-28: 0 contributions</title></rect>
+    <rect class="cell" x="1040" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:678ms"><title>2026-06-29: 0 contributions</title></rect>
+    <rect class="cell" x="1040" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:684ms"><title>2026-06-30: 0 contributions</title></rect>
+    <rect class="cell" x="1040" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:690ms"><title>2026-07-01: 0 contributions</title></rect>
+    <rect class="cell" x="1040" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:696ms"><title>2026-07-02: 0 contributions</title></rect>
+    <rect class="cell" x="1040" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:702ms"><title>2026-07-03: 0 contributions</title></rect>
+    <rect class="cell" x="1040" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:708ms"><title>2026-07-04: 0 contributions</title></rect>
+    <rect class="cell" x="1061" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:686ms"><title>2026-07-05: 0 contributions</title></rect>
+    <rect class="cell" x="1061" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:692ms"><title>2026-07-06: 0 contributions</title></rect>
+    <rect class="cell" x="1061" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:698ms"><title>2026-07-07: 0 contributions</title></rect>
+    <rect class="cell" x="1061" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:704ms"><title>2026-07-08: 0 contributions</title></rect>
+    <rect class="cell" x="1061" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:710ms"><title>2026-07-09: 0 contributions</title></rect>
+    <rect class="cell" x="1061" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:716ms"><title>2026-07-10: 0 contributions</title></rect>
+    <rect class="cell" x="1061" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:722ms"><title>2026-07-11: 0 contributions</title></rect>
+    <rect class="cell" x="1082" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:700ms"><title>2026-07-12: 0 contributions</title></rect>
+    <rect class="cell" x="1082" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:706ms"><title>2026-07-13: 0 contributions</title></rect>
+    <rect class="cell" x="1082" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:712ms"><title>2026-07-14: 0 contributions</title></rect>
+    <rect class="cell" x="1082" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:718ms"><title>2026-07-15: 0 contributions</title></rect>
+    <rect class="cell" x="1082" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:724ms"><title>2026-07-16: 0 contributions</title></rect>
+    <rect class="cell" x="1082" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:730ms"><title>2026-07-17: 0 contributions</title></rect>
+    <rect class="cell" x="1082" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:736ms"><title>2026-07-18: 0 contributions</title></rect>
+    <rect class="cell" x="1103" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:714ms"><title>2026-07-19: 0 contributions</title></rect>
+    <rect class="cell" x="1103" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:720ms"><title>2026-07-20: 0 contributions</title></rect>
+    <rect class="cell" x="1103" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:726ms"><title>2026-07-21: 0 contributions</title></rect>
+    <rect class="cell" x="1103" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:732ms"><title>2026-07-22: 0 contributions</title></rect>
+    <rect class="cell" x="1103" y="146" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:738ms"><title>2026-07-23: 0 contributions</title></rect>
+    <rect class="cell" x="1103" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:744ms"><title>2026-07-24: 0 contributions</title></rect>
+    <rect class="cell" x="1103" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:750ms"><title>2026-07-25: 0 contributions</title></rect>
+    <rect class="cell" x="1124" y="62" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.56" style="animation-delay:728ms"><title>2026-07-26: 3 contributions</title></rect>
+    <rect class="cell" x="1124" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1" style="animation-delay:734ms"><title>2026-07-27: 0 contributions</title></rect>
+    <rect class="cell" x="1124" y="104" width="17" height="17" rx="3" fill="#ff2bd6" opacity="0.85" style="animation-delay:740ms"><title>2026-07-28: 9 contributions</title></rect>
+    <text x="903" y="170" font-size="10.5" fill="#3f4d78" letter-spacing="1.4">LESS</text>
+    <rect x="947" y="159" width="15" height="15" rx="3" fill="#0b1030" opacity="1"/>
+    <rect x="969" y="159" width="15" height="15" rx="3" fill="#00f0ff" opacity=".5"/>
+    <rect x="991" y="159" width="15" height="15" rx="3" fill="#00f0ff" opacity=".85"/>
+    <rect x="1013" y="159" width="15" height="15" rx="3" fill="#7c4dff" opacity=".9"/>
+    <rect x="1035" y="159" width="15" height="15" rx="3" fill="#ff2bd6" opacity="1"/>
+    <text x="1069" y="170" font-size="10.5" fill="#3f4d78" letter-spacing="1.4">MORE</text>
+    <text x="32" y="170" font-size="11" fill="#3f4d78" letter-spacing="1.4">// 66 CONTRIBUTIONS</text>
+
+    <rect width="1173" height="190" fill="url(#scan)" opacity=".45"/>
+    <g class="sweep"><rect x="-260" y="0" width="260" height="190" fill="url(#swp)" opacity=".12"/></g>
+    <g stroke="#00f0ff" stroke-width="2" fill="none" filter="url(#neon)">
+      <path d="M12 34V12h22M1139 12h22v22M1161 156v22h-22M34 178H12v-22"/>
+    </g>
+    <rect x="1" y="1" width="1171" height="188" rx="10" fill="none" stroke="#16204a" stroke-width="2"/>
+  </g>
+</svg>
