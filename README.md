@@ -14,7 +14,7 @@
 
 <br/>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=3000&pause=1000&color=00F0FF&background=05060F00&center=true&vCenter=true&multiline=true&repeat=true&width=760&height=90&lines=%3E+fine-tuning+Llama+3+with+QLoRA+for+Tamil-medium+physics;%3E+hybrid+RAG+%E2%80%94+retrieval+beats+a+bigger+model;%3E+LangGraph+agents+%2B+Bayesian+Knowledge+Tracing" alt="fine-tuning Llama 3 with QLoRA · hybrid RAG · LangGraph agents" /></a>
+<img src="https://raw.githubusercontent.com/MfmRifath/MfmRifath/main/assets/generated/tagline.svg" width="100%" alt="fine-tuning Llama 3 with QLoRA for Tamil-medium physics · hybrid RAG — retrieval beats a bigger model · LangGraph agents + Bayesian Knowledge Tracing" />
 
 <a href="https://linkedin.com/in/rifath-mohammed-b3987a31a"><img src="https://img.shields.io/badge/LINKEDIN-00F0FF?style=for-the-badge&logo=linkedin&logoColor=05060F&labelColor=05060F&color=00F0FF" alt="LinkedIn" /></a>
 <a href="mailto:mmfmrifath@gmail.com"><img src="https://img.shields.io/badge/EMAIL-FF2BD6?style=for-the-badge&logo=gmail&logoColor=05060F&labelColor=05060F&color=FF2BD6" alt="Email" /></a>
@@ -89,13 +89,21 @@ is chosen from a live mastery estimate rather than a fixed syllabus order.
 
 ## `> ls ./projects --featured`
 
+<div align="center">
+
+<img width="98%" src="https://raw.githubusercontent.com/MfmRifath/MfmRifath/main/assets/generated/repos.svg" alt="Showcase of pinned repositories with language, stars and forks" />
+
+</div>
+
 | # | Project | What it does | Stack | Status |
 |:-:|:--|:--|:--|:-:|
-| 01 | [**AI Tuition Master**](https://github.com/MfmRifath) | Tamil-medium physics tutor — fine-tuned Llama 3, hybrid RAG, LangGraph agent, knowledge tracing | `Python` `LangGraph` | 🔨 |
-| 02 | [**MathsWithUsama**](https://github.com/MfmRifath/MathsWithUsama) | EdTech platform — gamified practice, real-time quizzes, progress tracking | `Flutter` `Firebase` | ✅ |
-| 03 | [**Zing**](https://github.com/MfmRifath/ZingApp) | Commerce app — secure payments, real-time cart, inventory | `React` `Node.js` | ✅ |
-| 04 | [**Nova Science**](https://github.com/MfmRifath/NovaScience) | Science publishing with peer-review workflow | `Django` `PostgreSQL` | ✅ |
-| 05 | [**Calorie Tracker**](https://github.com/MfmRifath/CalorieTrackerApp) | Intake vs. burn, local SQL persistence, analytics charts | `Flutter` `SQL` | ✅ |
+| 01 | [**AI Tuition Master**](https://github.com/MfmRifath?tab=repositories) | Tamil-medium physics tutor — fine-tuned Llama 3, hybrid RAG, LangGraph agent, knowledge tracing | `Python` `LangGraph` | 🔨 |
+| 02 | [**TalentScout AI**](https://github.com/MfmRifath/TalentScout-AI) | Evidence-based recruitment and talent-sourcing agent | `Python` | 🔨 |
+| 03 | [**S2O Academy**](https://github.com/MfmRifath/S2O-Website) | Academy platform front end | `TypeScript` | ✅ |
+| 04 | [**LearnWithUsama**](https://github.com/MfmRifath/LearnWithUsama) | EdTech mobile app — gamified practice, real-time quizzes, progress tracking | `Flutter` `Firebase` | ✅ |
+| 05 | [**Nova Science**](https://github.com/MfmRifath/NOVA-SCIENCE) | Online learning platform | `Flutter` `Dart` | ✅ |
+| 06 | [**Zing**](https://github.com/MfmRifath/Zing_website) | Commerce app — secure payments, real-time cart, inventory | `TypeScript` | ✅ |
+| 07 | [**Calorie Tracker**](https://github.com/MfmRifath/Calorie-Tracker-App---Flutter---Dart) | Intake vs. burn, local SQL persistence, analytics charts | `Flutter` `SQL` | ✅ |
 
 <img src="https://raw.githubusercontent.com/MfmRifath/MfmRifath/main/assets/divider.svg" width="100%" alt="" />
 
