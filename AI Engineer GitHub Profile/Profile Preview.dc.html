@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  body { margin:0; background:#02030a; }
+  a { color:#00f0ff; text-decoration:none; }
+  a:hover { color:#ff2bd6; text-decoration:underline; }
+
+  @keyframes om-gm { from { transform: translateY(0); } to { transform: translateY(26px); } }
+  @keyframes om-spin { to { transform: rotate(360deg); } }
+  @keyframes om-haze { 0%,100% { opacity:.10; } 50% { opacity:.28; } }
+  @keyframes om-ring { 0% { transform:scale(1); opacity:.28; } 100% { transform:scale(1.55); opacity:0; } }
+  @keyframes om-blink { 0%,100% { opacity:1; } 50% { opacity:.15; } }
+  @keyframes om-gA { 0%,60% { transform:translateX(0); } 64% { transform:translateX(-5px); } 68% { transform:translateX(4px); } 72%,100% { transform:translateX(0); } }
+  @keyframes om-gB { 0%,60% { transform:translateX(0); } 64% { transform:translateX(5px); } 68% { transform:translateX(-4px); } 72%,100% { transform:translateX(0); } }
+  @keyframes om-gW { 0%,62% { opacity:1; } 66% { opacity:.45; } 70%,100% { opacity:1; } }
+  @keyframes om-gbar { 0%,64% { opacity:0; } 66% { opacity:.92; } 69%,100% { opacity:0; } }
+  @keyframes om-rule { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+  @keyframes om-scanbar { from { transform:translateY(0); } to { transform:translateY(450px); } }
+  @keyframes om-np { 0%,100% { r:4; } 50% { r:6.5; } }
+  @keyframes om-fwd { 0% { offset-distance:0%; opacity:0; } 12% { opacity:1; } 88% { opacity:1; } 100% { offset-distance:100%; opacity:0; } }
+  @keyframes om-back { 0% { offset-distance:100%; opacity:0; } 12% { opacity:1; } 88% { opacity:1; } 100% { offset-distance:0%; opacity:0; } }
+  @keyframes om-flow { from { stroke-dashoffset:28; } to { stroke-dashoffset:0; } }
+  @keyframes om-hl { 0% { opacity:0; } 4% { opacity:1; } 16% { opacity:0; } 100% { opacity:0; } }
+  @keyframes om-fl { 0% { opacity:0; } 4% { opacity:.25; } 16% { opacity:0; } 100% { opacity:0; } }
+  @keyframes om-sweep { from { transform:translateX(-400px); } to { transform:translateX(1200px); } }
+  @keyframes om-live { 0%,100% { opacity:.2; } 50% { opacity:1; } }
+  @keyframes om-dv { from { transform:translateX(-35%); } to { transform:translateX(135%); } }
+  @keyframes om-run { 0% { offset-distance:0%; opacity:0; } 3% { opacity:1; } 14% { offset-distance:100%; opacity:1; } 15% { opacity:0; } 100% { offset-distance:100%; opacity:0; } }
+
+  .om-gm { animation: om-gm 2.2s linear infinite; }
+  .om-spin { transform-origin:0 0; animation: om-spin 24s linear infinite; }
+  .om-spinr { transform-origin:0 0; animation: om-spin 16s linear infinite reverse; }
+  .om-spin30 { transform-origin:0 0; animation: om-spin 30s linear infinite; }
+  .om-orb6 { transform-origin:0 0; animation: om-spin 6s linear infinite; }
+  .om-orb9 { transform-origin:0 0; animation: om-spin 9s linear infinite reverse; }
+  .om-haze { animation: om-haze 3s ease-in-out infinite; }
+  .om-ring { transform-origin:0 0; animation: om-ring 2.4s ease-out infinite; }
+  .om-blink { animation: om-blink 1.5s steps(1,end) infinite; }
+  .om-blink2 { animation: om-blink 1.8s steps(1,end) infinite; }
+  .om-ga { animation: om-gA 4s steps(1,end) infinite; }
+  .om-gb { animation: om-gB 4s steps(1,end) infinite; }
+  .om-gw { animation: om-gW 4s steps(1,end) infinite; }
+  .om-gbar { animation: om-gbar 4s steps(1,end) infinite; }
+  .om-rule { transform-origin:64px 0; animation: om-rule 1s cubic-bezier(.2,.8,.2,1) forwards; }
+  .om-scanbar { animation: om-scanbar 4.5s linear infinite; }
+  .om-np { animation: om-np 3s ease-in-out infinite; }
+  .om-pk { offset-rotate:0deg; animation-timing-function:linear; animation-iteration-count:infinite; }
+  .om-k1 { offset-path: path("M0 0 L-150 -92"); animation-name: om-back; animation-duration:2.6s; }
+  .om-k2 { offset-path: path("M0 0 L-168 34"); animation-name: om-back; animation-duration:3.1s; animation-delay:-.5s; }
+  .om-k3 { offset-path: path("M0 0 L-96 118"); animation-name: om-back; animation-duration:2.9s; animation-delay:-1.1s; }
+  .om-k4 { offset-path: path("M0 0 L128 -104"); animation-name: om-fwd; animation-duration:2.7s; animation-delay:-.2s; }
+  .om-k5 { offset-path: path("M0 0 L164 22"); animation-name: om-fwd; animation-duration:3.3s; animation-delay:-.9s; }
+  .om-k6 { offset-path: path("M0 0 L74 122"); animation-name: om-fwd; animation-duration:3s; animation-delay:-1.6s; }
+
+  .om-flow { stroke-dasharray:6 8; animation: om-flow 1s linear infinite; }
+  .om-hl { opacity:0; animation: om-hl 6s linear infinite; }
+  .om-fl { opacity:0; animation: om-fl 6s linear infinite; }
+  .om-sweep { animation: om-sweep 7s linear infinite; }
+  .om-live { animation: om-live 2s ease-in-out infinite; }
+  .om-dv { animation: om-dv 4s linear infinite; }
+  .om-run { offset-rotate:0deg; animation-name: om-run; animation-duration:6s; animation-timing-function:linear; animation-iteration-count:infinite; }
+  .om-r1 { offset-path: path("M176 218 H222"); }
+  .om-r2 { offset-path: path("M348 218 C376 218 372 128 400 128"); animation-delay:.5s; }
+  .om-r4 { offset-path: path("M348 218 C376 218 372 308 400 308"); animation-delay:.5s; }
+  .om-r5 { offset-path: path("M578 128 C610 128 600 218 630 218"); animation-delay:1.5s; }
+  .om-r7 { offset-path: path("M578 308 C610 308 600 218 630 218"); animation-delay:1.5s; }
+  .om-r8 { offset-path: path("M770 218 H816"); animation-delay:2.7s; }
+  .om-r9 { offset-path: path("M964 218 H1010"); animation-delay:3.3s; }
+  .om-r10 { offset-path: path("M1072 250 V392 H932"); animation-delay:3.9s; }
+  .om-r11 { offset-path: path("M818 416 V438 H80 C62 438 54 428 54 414 V256"); animation-delay:4.7s; }
+</style>
+</helmet>
+<div style="min-height:100vh; background:#02030a; padding:36px 18px 70px; font-family:'JetBrains Mono',ui-monospace,monospace; color:#c8d3f5; font-size:15px; line-height:1.7;">
+<div style="max-width:1000px; margin:0 auto; background:#05060f; border:1px solid #16204a; border-radius:12px; overflow:hidden; position:relative;">
+
+  <div style="position:absolute; inset:0; pointer-events:none; z-index:3; background:repeating-linear-gradient(180deg, rgba(10,20,48,.42) 0 1.4px, transparent 1.4px 4px);"></div>
+
+  <div style="display:flex; align-items:center; gap:10px; padding:11px 18px; border-bottom:1px solid #16204a; background:#080c22; font-size:12px; color:#5f6f9e; position:relative; z-index:4;">
+    <span class="om-blink" style="width:8px; height:8px; background:#ff2bd6; display:inline-block;"></span>
+    <span>MfmRifath / <strong style="color:#00f0ff;">README.md</strong></span>
+    <span style="margin-left:auto; letter-spacing:.16em; color:#7c4dff;">PREVIEW</span>
+  </div>
+
+  <div style="padding:22px 26px 46px; position:relative; z-index:2;">
+
+    <svg viewBox="0 0 1200 380" role="img" aria-label="Rifath MFM — AI Engineer" style="display:block; width:100%; border-radius:10px;">
+      <defs>
+        <linearGradient id="hcy" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00f0ff"></stop><stop offset="100%" stop-color="#7c4dff"></stop></linearGradient>
+        <linearGradient id="hfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#05060f" stop-opacity="1"></stop><stop offset="55%" stop-color="#05060f" stop-opacity=".25"></stop><stop offset="100%" stop-color="#05060f" stop-opacity="0"></stop></linearGradient>
+        <radialGradient id="hsun" cx="50%" cy="100%"><stop offset="0%" stop-color="#ff2bd6" stop-opacity=".5"></stop><stop offset="60%" stop-color="#7c4dff" stop-opacity=".16"></stop><stop offset="100%" stop-color="#7c4dff" stop-opacity="0"></stop></radialGradient>
+        <linearGradient id="hbar" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00f0ff" stop-opacity="0"></stop><stop offset="50%" stop-color="#00f0ff" stop-opacity=".45"></stop><stop offset="100%" stop-color="#00f0ff" stop-opacity="0"></stop></linearGradient>
+        <pattern id="hscan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.4" fill="#0a1430" opacity=".55"></rect></pattern>
+        <filter id="hneon" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"></feGaussianBlur><feMerge><feMergeNode in="b"></feMergeNode><feMergeNode in="b"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter>
+        <filter id="hbig" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="9"></feGaussianBlur></filter>
+        <clipPath id="hclip"><rect width="1200" height="380" rx="10"></rect></clipPath>
+        <clipPath id="hfloor"><rect x="0" y="248" width="1200" height="132"></rect></clipPath>
+      </defs>
+      <g clip-path="url(#hclip)">
+        <rect width="1200" height="380" fill="#05060f"></rect>
+        <ellipse cx="600" cy="256" rx="520" ry="150" fill="url(#hsun)"></ellipse>
+        <g clip-path="url(#hfloor)">
+          <g stroke="#00f0ff" stroke-width="1" opacity=".5"><path d="M600 248 L-260 380M600 248 L-60 380M600 248 L180 380M600 248 L360 380M600 248 L500 380M600 248 L600 380M600 248 L700 380M600 248 L840 380M600 248 L1020 380M600 248 L1260 380M600 248 L1460 380"></path></g>
+          <g class="om-gm" stroke="#ff2bd6" stroke-width="1.1" opacity=".65"><path d="M0 252H1200M0 258H1200M0 266H1200M0 277H1200M0 292H1200M0 312H1200M0 338H1200M0 372H1200M0 416H1200"></path></g>
+          <rect x="0" y="248" width="1200" height="72" fill="url(#hfade)"></rect>
+          <rect x="0" y="246" width="1200" height="2.5" fill="#00f0ff" filter="url(#hneon)"></rect>
+        </g>
+
+        <g transform="translate(960 158)">
+          <circle class="om-haze" r="86" fill="#ff2bd6" filter="url(#hbig)"></circle>
+          <path class="om-spin" d="M0-74 64-37 64 37 0 74-64 37-64-37Z" fill="none" stroke="#00f0ff" stroke-width="1.6" filter="url(#hneon)"></path>
+          <path class="om-spinr" d="M0-52 45-26 45 26 0 52-45 26-45-26Z" fill="none" stroke="#ff2bd6" stroke-width="1.2" filter="url(#hneon)"></path>
+          <circle class="om-spin30" r="96" fill="none" stroke="#7c4dff" stroke-width="1" stroke-dasharray="3 14" opacity=".8"></circle>
+          <g stroke="#7c4dff" stroke-width="1.2" opacity=".45" fill="none"><path d="M0 0 L-150 -92M0 0 L-168 34M0 0 L-96 118M0 0 L128 -104M0 0 L164 22M0 0 L74 122"></path></g>
+          <g filter="url(#hneon)">
+            <circle class="om-pk om-k1" r="3.6" fill="#00f0ff"></circle>
+            <circle class="om-pk om-k2" r="3.6" fill="#00f0ff"></circle>
+            <circle class="om-pk om-k3" r="3.6" fill="#00f0ff"></circle>
+            <circle class="om-pk om-k4" r="3.6" fill="#ff2bd6"></circle>
+            <circle class="om-pk om-k5" r="3.6" fill="#ff2bd6"></circle>
+            <circle class="om-pk om-k6" r="3.6" fill="#ff2bd6"></circle>
+          </g>
+          <g filter="url(#hneon)">
+            <circle class="om-orb6" cx="0" cy="-96" r="3.5" fill="#00f0ff"></circle>
+            <circle class="om-orb6" cx="0" cy="96" r="3.5" fill="#ff2bd6"></circle>
+            <circle class="om-orb9" cx="96" cy="0" r="2.5" fill="#7c4dff"></circle>
+          </g>
+          <g transform="translate(-150 -92)"><circle r="14" fill="#080c22" stroke="#00f0ff" stroke-width="1.4"></circle><circle class="om-np" r="4" fill="#00f0ff"></circle></g>
+          <g transform="translate(-168 34)"><circle r="14" fill="#080c22" stroke="#00f0ff" stroke-width="1.4"></circle><circle class="om-np" r="4" fill="#00f0ff" style="animation-delay:-.4s"></circle></g>
+          <g transform="translate(-96 118)"><circle r="14" fill="#080c22" stroke="#00f0ff" stroke-width="1.4"></circle><circle class="om-np" r="4" fill="#00f0ff" style="animation-delay:-.8s"></circle></g>
+          <g transform="translate(128 -104)"><circle r="14" fill="#080c22" stroke="#ff2bd6" stroke-width="1.4"></circle><circle class="om-np" r="4" fill="#ff2bd6" style="animation-delay:-1.2s"></circle></g>
+          <g transform="translate(164 22)"><circle r="14" fill="#080c22" stroke="#ff2bd6" stroke-width="1.4"></circle><circle class="om-np" r="4" fill="#ff2bd6" style="animation-delay:-1.6s"></circle></g>
+          <g transform="translate(74 122)"><circle r="14" fill="#080c22" stroke="#ff2bd6" stroke-width="1.4"></circle><circle class="om-np" r="4" fill="#ff2bd6" style="animation-delay:-2s"></circle></g>
+          <circle class="om-ring" r="30" fill="#00f0ff"></circle>
+          <circle r="30" fill="#05060f" stroke="url(#hcy)" stroke-width="2" filter="url(#hneon)"></circle>
+          <text y="5" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="13" font-weight="700" fill="#e6f6ff" letter-spacing="1">LLM</text>
+        </g>
+
+        <g font-family="'JetBrains Mono',monospace">
+          <rect class="om-blink" x="64" y="56" width="10" height="10" fill="#00f0ff" filter="url(#hneon)"></rect>
+          <text x="88" y="66" font-size="14" letter-spacing="6" fill="#00f0ff" font-weight="700" filter="url(#hneon)">AI ENGINEER</text>
+          <g font-size="62" font-weight="700" letter-spacing="-1">
+            <text class="om-ga" x="64" y="150" fill="#ff2bd6" opacity=".85" filter="url(#hneon)">RIFATH MFM</text>
+            <text class="om-gb" x="64" y="150" fill="#00f0ff" opacity=".85" filter="url(#hneon)">RIFATH MFM</text>
+            <text class="om-gw" x="64" y="150" fill="#ffffff">RIFATH MFM</text>
+            <rect class="om-gbar" x="64" y="116" width="470" height="13" fill="#05060f"></rect>
+          </g>
+          <rect class="om-rule" x="64" y="168" width="430" height="3" fill="url(#hcy)" filter="url(#hneon)"></rect>
+          <text x="64" y="204" font-size="17" fill="#8ea0d0" letter-spacing=".5">LLM fine-tuning<tspan fill="#ff2bd6"> · </tspan>RAG<tspan fill="#ff2bd6"> · </tspan>Agentic systems</text>
+          <g font-size="12.5">
+            <rect x="64" y="228" width="184" height="30" rx="4" fill="#0b1030" stroke="#00f0ff" stroke-opacity=".55"></rect>
+            <text x="80" y="248" fill="#00f0ff">QLoRA · Llama 3</text>
+            <rect x="258" y="228" width="176" height="30" rx="4" fill="#0b1030" stroke="#ff2bd6" stroke-opacity=".55"></rect>
+            <text x="274" y="248" fill="#ff2bd6">LangGraph · RAG</text>
+            <rect x="444" y="228" width="160" height="30" rx="4" fill="#0b1030" stroke="#7c4dff" stroke-opacity=".6"></rect>
+            <text x="460" y="248" fill="#a98bff">FastAPI · Docker</text>
+          </g>
+          <circle class="om-blink2" cx="1122" cy="44" r="4.5" fill="#39ff88" filter="url(#hneon)"></circle>
+          <text x="1108" y="49" text-anchor="end" font-size="12" fill="#8ea0d0" letter-spacing="1.5">OPEN TO AI/ML ROLES</text>
+          <text x="64" y="352" font-size="11.5" fill="#3f4d78" letter-spacing="2">// COLOMBO · UTC+5:30 · TAMIL / ENGLISH / SINHALA</text>
+        </g>
+
+        <rect width="1200" height="380" fill="url(#hscan)" opacity=".5"></rect>
+        <rect class="om-scanbar" x="0" y="-70" width="1200" height="70" fill="url(#hbar)" opacity=".4"></rect>
+        <g stroke="#00f0ff" stroke-width="2.5" fill="none" filter="url(#hneon)"><path d="M14 44V14h30M1156 14h30v30M1186 336v30h-30M44 366H14v-30"></path></g>
+        <rect x="1" y="1" width="1198" height="378" rx="10" fill="none" stroke="#16204a" stroke-width="2"></rect>
+      </g>
+    </svg>
+
+    <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:20px 0 4px;">
+      <span style="display:inline-flex; align-items:center; height:26px; padding:0 13px; border-radius:3px; background:#00f0ff; color:#05060f; font-size:11px; font-weight:700; letter-spacing:.1em;">LINKEDIN</span>
+      <span style="display:inline-flex; align-items:center; height:26px; padding:0 13px; border-radius:3px; background:#ff2bd6; color:#05060f; font-size:11px; font-weight:700; letter-spacing:.1em;">EMAIL</span>
+      <span style="display:inline-flex; align-items:center; height:26px; padding:0 13px; border-radius:3px; background:#7c4dff; color:#05060f; font-size:11px; font-weight:700; letter-spacing:.1em;">GITHUB</span>
+      <span style="display:inline-flex; align-items:center; height:26px; padding:0 13px; border-radius:3px; background:#080c22; border:1px solid #00f0ff55; color:#00f0ff; font-size:11px; font-weight:700; letter-spacing:.1em;">VISITORS</span>
+      <span style="display:inline-flex; align-items:center; height:26px; padding:0 13px; border-radius:3px; background:#080c22; border:1px solid #ff2bd655; color:#ff2bd6; font-size:11px; font-weight:700; letter-spacing:.1em;">FOLLOWERS</span>
+      <span style="display:inline-flex; align-items:center; height:26px; padding:0 13px; border-radius:3px; background:#080c22; border:1px solid #7c4dff55; color:#a98bff; font-size:11px; font-weight:700; letter-spacing:.1em;">STARS</span>
+    </div>
+
+    <div style="position:relative; height:8px; margin:22px 0; overflow:hidden; background:linear-gradient(#00f0ff,#00f0ff) center/100% 1.4px no-repeat;">
+      <div class="om-dv" style="position:absolute; top:0; left:0; width:32%; height:8px; background:linear-gradient(90deg,transparent,#ff2bd6,transparent);"></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1.35fr 1fr; gap:26px; align-items:start;">
+      <div>
+        <h2 style="font-size:17px; font-weight:700; color:#00f0ff; margin:0 0 12px; letter-spacing:.04em;">&gt; whoami</h2>
+        <p style="margin:0 0 12px; font-size:14px; color:#c8d3f5; text-wrap:pretty;">AI engineer working on <strong style="color:#ff2bd6;">retrieval-augmented and agentic systems for education</strong>, with a focus on languages that large models handle badly. My final-year project fine-tunes Llama 3 on Tamil-medium A/L Physics and wraps it in a LangGraph agent with knowledge tracing — the kind of system where the retrieval layer matters more than the model.</p>
+        <p style="margin:0; font-size:14px; color:#8ea0d0; text-wrap:pretty;">Before that: four shipped products, and six months building a national legislation database as a backend engineer. I like problems where the data pipeline is the hard part.</p>
+      </div>
+      <div>
+        <h2 style="font-size:17px; font-weight:700; color:#00f0ff; margin:0 0 12px; letter-spacing:.04em;">&gt; status</h2>
+        <div style="background:#080c22; border:1px solid #16204a; border-radius:8px; padding:14px 16px; font-size:12.5px; line-height:1.95;">
+          <sc-for list="{{ status }}" as="s" hint-placeholder-count="7">
+            <div style="display:grid; grid-template-columns:78px 1fr; gap:8px;">
+              <span style="color:#ff2bd6;">{{ s.k }}</span>
+              <span style="color:#c8d3f5;">{{ s.v }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative; height:8px; margin:24px 0; overflow:hidden; background:linear-gradient(#00f0ff,#00f0ff) center/100% 1.4px no-repeat;">
+      <div class="om-dv" style="position:absolute; top:0; left:0; width:32%; height:8px; background:linear-gradient(90deg,transparent,#ff2bd6,transparent);"></div>
+    </div>
+
+    <h2 style="font-size:17px; font-weight:700; color:#00f0ff; margin:0 0 14px; letter-spacing:.04em;">&gt; cat ./ai-tuition-master/ARCHITECTURE</h2>
+
+    <svg viewBox="0 0 1200 460" role="img" aria-label="AI Tuition Master architecture" style="display:block; width:100%; border-radius:10px;">
+      <defs>
+        <linearGradient id="qsw" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00f0ff" stop-opacity="0"></stop><stop offset="50%" stop-color="#00f0ff" stop-opacity=".14"></stop><stop offset="100%" stop-color="#00f0ff" stop-opacity="0"></stop></linearGradient>
+        <pattern id="qscan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.4" fill="#0a1430" opacity=".5"></rect></pattern>
+        <filter id="qneon" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="2.6" result="b"></feGaussianBlur><feMerge><feMergeNode in="b"></feMergeNode><feMergeNode in="b"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter>
+        <clipPath id="qclip"><rect width="1200" height="460" rx="10"></rect></clipPath>
+      </defs>
+      <g clip-path="url(#qclip)">
+        <rect width="1200" height="460" fill="#05060f"></rect>
+        <g stroke="#0d1533" stroke-width="1">
+          <path d="M40 0V460M120 0V460M200 0V460M280 0V460M360 0V460M440 0V460M520 0V460M600 0V460M680 0V460M760 0V460M840 0V460M920 0V460M1000 0V460M1080 0V460M1160 0V460"></path>
+          <path d="M0 40H1200M0 120H1200M0 200H1200M0 280H1200M0 360H1200M0 440H1200"></path>
+        </g>
+        <g font-family="'JetBrains Mono',monospace">
+          <rect class="om-blink" x="32" y="26" width="9" height="9" fill="#ff2bd6" filter="url(#qneon)"></rect>
+          <text x="52" y="36" font-size="13" letter-spacing="4" fill="#00f0ff" font-weight="700" filter="url(#qneon)">AI TUITION MASTER // RUNTIME</text>
+          <text x="52" y="58" font-size="11.5" fill="#5f6f9e" letter-spacing=".5">grounded retrieval · fine-tuned generation · adaptive sequencing</text>
+        </g>
+        <g stroke-width="1.6" fill="none" stroke-linecap="round" filter="url(#qneon)">
+          <g class="om-flow" stroke="#00f0ff" opacity=".8">
+            <path d="M176 218 H222"></path><path d="M348 218 C376 218 372 128 400 128"></path><path d="M348 218 H394"></path><path d="M348 218 C376 218 372 308 400 308"></path>
+          </g>
+          <g class="om-flow" stroke="#7c4dff" opacity=".85">
+            <path d="M578 128 C610 128 600 218 630 218"></path><path d="M578 218 H630"></path><path d="M578 308 C610 308 600 218 630 218"></path>
+            <path d="M400 128 H378 C362 128 358 142 358 156 V376 C358 388 366 392 378 392 H394"></path><path d="M489 336 V360"></path>
+          </g>
+          <g class="om-flow" stroke="#ff2bd6" opacity=".85">
+            <path d="M770 218 H816"></path><path d="M964 218 H1010"></path><path d="M1072 250 V392 H932"></path><path d="M818 416 V438 H80 C62 438 54 428 54 414 V256"></path>
+          </g>
+        </g>
+        <g filter="url(#qneon)">
+          <g fill="#00f0ff"><path d="M222 213l11 5-11 5z"></path><path d="M400 123l11 5-11 5z"></path><path d="M394 213l11 5-11 5z"></path><path d="M400 303l11 5-11 5z"></path></g>
+          <g fill="#7c4dff"><path d="M630 213l11 5-11 5z"></path><path d="M394 387l11 5-11 5z"></path><path d="M484 360l5 11 5-11z"></path></g>
+          <g fill="#ff2bd6"><path d="M816 213l11 5-11 5z"></path><path d="M1010 213l11 5-11 5z"></path><path d="M932 387l-11 5 11 5z"></path><path d="M49 256l5-11 5 11z"></path></g>
+        </g>
+        <g filter="url(#qneon)">
+          <circle class="om-run om-r1" r="4.5" fill="#00f0ff"></circle>
+          <circle class="om-run om-r2" r="4.5" fill="#00f0ff"></circle>
+          <circle class="om-run om-r4" r="4.5" fill="#00f0ff"></circle>
+          <circle class="om-run om-r5" r="4.5" fill="#a98bff"></circle>
+          <circle class="om-run om-r7" r="4.5" fill="#a98bff"></circle>
+          <circle class="om-run om-r8" r="4.5" fill="#ff2bd6"></circle>
+          <circle class="om-run om-r9" r="4.5" fill="#ff2bd6"></circle>
+          <circle class="om-run om-r10" r="4.5" fill="#ff2bd6"></circle>
+          <circle class="om-run om-r11" r="4.5" fill="#ff2bd6"></circle>
+        </g>
+        <g font-family="'JetBrains Mono',monospace">
+          <g transform="translate(46 190)">
+            <rect width="130" height="56" rx="5" fill="#080c22" stroke="#00f0ff" stroke-opacity=".45" stroke-width="1.5"></rect>
+            <rect class="om-hl" width="130" height="56" rx="5" fill="none" stroke="#00f0ff" stroke-width="1.5" filter="url(#qneon)"></rect>
+            <text x="65" y="25" text-anchor="middle" font-size="13" fill="#e6f6ff" font-weight="700">Student</text>
+            <text x="65" y="42" text-anchor="middle" font-size="10" fill="#5f6f9e">Tamil / English</text>
+          </g>
+          <g transform="translate(222 190)">
+            <rect width="126" height="56" rx="5" fill="#12063a" stroke="#00f0ff" stroke-width="1.6" filter="url(#qneon)"></rect>
+            <rect class="om-fl" width="126" height="56" rx="5" fill="#00f0ff" style="animation-delay:.4s"></rect>
+            <text x="63" y="25" text-anchor="middle" font-size="13" fill="#00f0ff" font-weight="700">LangGraph</text>
+            <text x="63" y="42" text-anchor="middle" font-size="10" fill="#7fb8d8">router</text>
+          </g>
+          <g transform="translate(400 100)">
+            <rect width="178" height="56" rx="5" fill="#080c22" stroke="#7c4dff" stroke-opacity=".5" stroke-width="1.5"></rect>
+            <rect class="om-hl" width="178" height="56" rx="5" fill="none" stroke="#7c4dff" stroke-width="1.5" filter="url(#qneon)" style="animation-delay:1s"></rect>
+            <text x="89" y="25" text-anchor="middle" font-size="13" fill="#e6f6ff" font-weight="700">Retriever</text>
+            <text x="89" y="42" text-anchor="middle" font-size="10" fill="#5f6f9e">hybrid BM25 + dense</text>
+          </g>
+          <g transform="translate(400 190)">
+            <rect width="178" height="56" rx="5" fill="#080c22" stroke="#7c4dff" stroke-opacity=".5" stroke-width="1.5"></rect>
+            <rect class="om-hl" width="178" height="56" rx="5" fill="none" stroke="#7c4dff" stroke-width="1.5" filter="url(#qneon)" style="animation-delay:1s"></rect>
+            <text x="89" y="25" text-anchor="middle" font-size="13" fill="#e6f6ff" font-weight="700">Solver agent</text>
+            <text x="89" y="42" text-anchor="middle" font-size="10" fill="#5f6f9e">step decomposition</text>
+          </g>
+          <g transform="translate(400 280)">
+            <rect width="178" height="56" rx="5" fill="#080c22" stroke="#7c4dff" stroke-opacity=".5" stroke-width="1.5"></rect>
+            <rect class="om-hl" width="178" height="56" rx="5" fill="none" stroke="#7c4dff" stroke-width="1.5" filter="url(#qneon)" style="animation-delay:1s"></rect>
+            <text x="89" y="25" text-anchor="middle" font-size="13" fill="#e6f6ff" font-weight="700">Multimodal</text>
+            <text x="89" y="42" text-anchor="middle" font-size="10" fill="#5f6f9e">physics figure retrieval</text>
+          </g>
+          <g transform="translate(400 366)">
+            <rect width="178" height="50" rx="5" fill="#0b1030" stroke="#2a3768" stroke-width="1.5"></rect>
+            <text x="89" y="22" text-anchor="middle" font-size="12" fill="#c8d3f5" font-weight="700">Vector store</text>
+            <text x="89" y="38" text-anchor="middle" font-size="10" fill="#5f6f9e">Tamil physics corpus</text>
+          </g>
+          <g transform="translate(636 190)">
+            <rect width="134" height="56" rx="5" fill="#2a0433" stroke="#ff2bd6" stroke-width="1.6" filter="url(#qneon)"></rect>
+            <rect class="om-fl" width="134" height="56" rx="5" fill="#ff2bd6" style="animation-delay:2s"></rect>
+            <text x="67" y="25" text-anchor="middle" font-size="13" fill="#ff2bd6" font-weight="700">Llama 3</text>
+            <text x="67" y="42" text-anchor="middle" font-size="10" fill="#e79ad6">QLoRA fine-tune</text>
+          </g>
+          <g transform="translate(822 190)">
+            <rect width="142" height="56" rx="5" fill="#080c22" stroke="#00f0ff" stroke-opacity=".45" stroke-width="1.5"></rect>
+            <rect class="om-hl" width="142" height="56" rx="5" fill="none" stroke="#00f0ff" stroke-width="1.5" filter="url(#qneon)" style="animation-delay:2.8s"></rect>
+            <text x="71" y="25" text-anchor="middle" font-size="13" fill="#e6f6ff" font-weight="700">Groundedness</text>
+            <text x="71" y="42" text-anchor="middle" font-size="10" fill="#5f6f9e">+ citation check</text>
+          </g>
+          <g transform="translate(1016 190)">
+            <rect width="122" height="56" rx="5" fill="#062417" stroke="#39ff88" stroke-width="1.6" filter="url(#qneon)"></rect>
+            <circle class="om-live" cx="22" cy="28" r="4.5" fill="#39ff88"></circle>
+            <text x="72" y="33" text-anchor="middle" font-size="13" fill="#39ff88" font-weight="700">Answer</text>
+          </g>
+          <g transform="translate(716 366)">
+            <rect width="216" height="50" rx="5" fill="#080c22" stroke="#ff2bd6" stroke-opacity=".5" stroke-width="1.5"></rect>
+            <rect class="om-hl" width="216" height="50" rx="5" fill="none" stroke="#ff2bd6" stroke-width="1.5" filter="url(#qneon)" style="animation-delay:4s"></rect>
+            <text x="108" y="22" text-anchor="middle" font-size="12" fill="#e6f6ff" font-weight="700">Bayesian Knowledge Tracing</text>
+            <text x="108" y="38" text-anchor="middle" font-size="9.5" fill="#5f6f9e">mastery estimate → next question</text>
+          </g>
+          <text x="1168" y="444" text-anchor="end" font-size="10" fill="#39406b" letter-spacing="2">FEEDBACK LOOP</text>
+        </g>
+        <rect class="om-sweep" x="-400" y="0" width="400" height="460" fill="url(#qsw)"></rect>
+        <rect width="1200" height="460" fill="url(#qscan)" opacity=".45"></rect>
+        <g stroke="#00f0ff" stroke-width="2.5" fill="none" filter="url(#qneon)" opacity=".9"><path d="M14 40V14h26M1160 14h26v26M1186 420v26h-26M40 446H14v-26"></path></g>
+        <rect x="1" y="1" width="1198" height="458" rx="10" fill="none" stroke="#16204a" stroke-width="2"></rect>
+      </g>
+    </svg>
+
+    <p style="margin:14px 0 12px; font-size:14px; color:#8ea0d0; text-wrap:pretty;"><strong style="color:#e6f6ff;">Why it is not just a chatbot:</strong> answers are refused or re-retrieved when the groundedness check fails, and the next question is chosen from a live mastery estimate rather than a fixed syllabus order.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:7px; justify-content:center;">
+      <sc-for list="{{ aiStack }}" as="t" hint-placeholder-count="6">
+        <span style="font-size:11.5px; white-space:nowrap; padding:4px 10px; border-radius:3px; background:#080c22; border:1px solid #7c4dff55; color:#a98bff;">{{ t }}</span>
+      </sc-for>
+    </div>
+
+    <div style="position:relative; height:8px; margin:24px 0; overflow:hidden; background:linear-gradient(#00f0ff,#00f0ff) center/100% 1.4px no-repeat;">
+      <div class="om-dv" style="position:absolute; top:0; left:0; width:32%; height:8px; background:linear-gradient(90deg,transparent,#ff2bd6,transparent);"></div>
+    </div>
+
+    <sc-if value="{{ showWidgets }}" hint-placeholder-val="{{ true }}">
+      <div>
+        <h2 style="font-size:17px; font-weight:700; color:#00f0ff; margin:0 0 14px; letter-spacing:.04em;">&gt; git log --stat</h2>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+          <div style="height:180px; border:1px solid #16204a; border-radius:10px; background:#080c22; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+            <span style="font-size:11px; letter-spacing:.14em; color:#00f0ff;">GITHUB STATS CARD</span>
+            <span style="font-size:10.5px; color:#3f4d78;">renders on GitHub · neon theme</span>
+          </div>
+          <div style="height:180px; border:1px solid #16204a; border-radius:10px; background:#080c22; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+            <span style="font-size:11px; letter-spacing:.14em; color:#00f0ff;">TOP LANGUAGES</span>
+            <span style="font-size:10.5px; color:#3f4d78;">renders on GitHub · neon theme</span>
+          </div>
+        </div>
+        <div style="display:flex; justify-content:center; margin-top:10px;">
+          <div style="width:72%; height:150px; border:1px solid #16204a; border-radius:10px; background:#080c22; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+            <span style="font-size:11px; letter-spacing:.14em; color:#ff2bd6;">STREAK COUNTER</span>
+            <span style="font-size:10.5px; color:#3f4d78;">renders on GitHub · neon theme</span>
+          </div>
+        </div>
+        <div style="height:190px; margin-top:10px; border:1px solid #16204a; border-radius:10px; background:#080c22; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+          <span style="font-size:11px; letter-spacing:.14em; color:#00f0ff;">CONTRIBUTION SIGNAL — ACTIVITY GRAPH</span>
+          <span style="font-size:10.5px; color:#3f4d78;">renders on GitHub · neon theme</span>
+        </div>
+        <div style="height:110px; margin-top:10px; border:1px solid #16204a; border-radius:10px; background:#080c22; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;">
+          <span style="font-size:11px; letter-spacing:.14em; color:#7c4dff;">TROPHIES</span>
+          <span style="font-size:10.5px; color:#3f4d78;">renders on GitHub · radical theme</span>
+        </div>
+        <div style="position:relative; height:8px; margin:24px 0; overflow:hidden; background:linear-gradient(#00f0ff,#00f0ff) center/100% 1.4px no-repeat;">
+          <div class="om-dv" style="position:absolute; top:0; left:0; width:32%; height:8px; background:linear-gradient(90deg,transparent,#ff2bd6,transparent);"></div>
+        </div>
+      </div>
+    </sc-if>
+
+    <h2 style="font-size:17px; font-weight:700; color:#00f0ff; margin:0 0 14px; letter-spacing:.04em;">&gt; ls ./projects --featured</h2>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+      <sc-for list="{{ pins }}" as="pin" hint-placeholder-count="4">
+        <div style="height:120px; border:1px solid #16204a; border-radius:10px; background:#080c22; padding:16px 18px;">
+          <div style="font-size:12.5px; color:#00f0ff; font-weight:700;">{{ pin.repo }}</div>
+          <div style="font-size:11px; color:#3f4d78; margin-top:8px;">pinned repo card — renders on GitHub</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="border:1px solid #16204a; border-radius:8px; overflow:hidden; margin-top:16px;">
+      <div style="display:grid; grid-template-columns:36px 1.1fr 2.2fr 1fr 44px; gap:12px; padding:10px 14px; background:#080c22; font-size:11px; letter-spacing:.12em; color:#5f6f9e;">
+        <span>#</span><span>PROJECT</span><span>WHAT IT DOES</span><span>STACK</span><span>ST</span>
+      </div>
+      <sc-for list="{{ projects }}" as="p" hint-placeholder-count="5">
+        <div style="display:grid; grid-template-columns:36px 1.1fr 2.2fr 1fr 44px; gap:12px; padding:12px 14px; border-top:1px solid #101733; font-size:12.5px; align-items:start; transition:background .15s ease;" style-hover="background:#0a1030;">
+          <span style="color:#7c4dff;">{{ p.n }}</span>
+          <a href="{{ p.url }}" style="font-weight:700;">{{ p.name }}</a>
+          <span style="color:#8ea0d0;">{{ p.blurb }}</span>
+          <span style="color:#5f6f9e;">{{ p.stack }}</span>
+          <span style="color:#39ff88; text-align:center;">{{ p.status }}</span>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="position:relative; height:8px; margin:24px 0; overflow:hidden; background:linear-gradient(#00f0ff,#00f0ff) center/100% 1.4px no-repeat;">
+      <div class="om-dv" style="position:absolute; top:0; left:0; width:32%; height:8px; background:linear-gradient(90deg,transparent,#ff2bd6,transparent);"></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:26px; align-items:start;">
+      <div>
+        <h2 style="font-size:17px; font-weight:700; color:#00f0ff; margin:0 0 12px; letter-spacing:.04em;">&gt; tail -f now.log</h2>
+        <div style="border:1px solid #16204a; border-radius:8px; overflow:hidden; margin-bottom:24px;">
+          <sc-for list="{{ nowLog }}" as="row" hint-placeholder-count="3">
+            <div style="display:grid; grid-template-columns:82px 1fr; gap:12px; padding:10px 14px; border-bottom:1px solid #101733; font-size:12.5px;">
+              <span style="color:#ff2bd6;">{{ row.when }}</span>
+              <span style="color:#c8d3f5;">{{ row.what }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <h2 style="font-size:17px; font-weight:700; color:#00f0ff; margin:0 0 14px; letter-spacing:.04em;">&gt; cat experience.log</h2>
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <sc-for list="{{ experience }}" as="e" hint-placeholder-count="3">
+            <div style="display:grid; grid-template-columns:12px 1fr; gap:12px;">
+              <div style="display:flex; flex-direction:column; align-items:center; padding-top:7px;">
+                <span style="width:8px; height:8px; background:#00f0ff;"></span>
+                <span style="flex:1; width:1px; background:#16204a; margin-top:5px;"></span>
+              </div>
+              <div>
+                <div style="font-size:13.5px; color:#e6f6ff; font-weight:700;">{{ e.title }}</div>
+                <div style="font-size:11.5px; color:#ff2bd6; margin:1px 0 6px;">{{ e.meta }}</div>
+                <p style="margin:0; font-size:13px; color:#8ea0d0; text-wrap:pretty;">{{ e.body }}</p>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <h2 style="font-size:17px; font-weight:700; color:#00f0ff; margin:0 0 12px; letter-spacing:.04em;">&gt; tech --stack</h2>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <sc-for list="{{ toolkit }}" as="k" hint-placeholder-count="4">
+            <div>
+              <div style="font-size:11px; letter-spacing:.14em; color:#5f6f9e; margin-bottom:7px;">{{ k.label }}</div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                <sc-for list="{{ k.items }}" as="it" hint-placeholder-count="5">
+                  <span style="font-size:11.5px; white-space:nowrap; padding:3px 9px; border-radius:3px; background:#080c22; border:1px solid #16204a; color:#c8d3f5;">{{ it }}</span>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative; height:8px; margin:24px 0; overflow:hidden; background:linear-gradient(#00f0ff,#00f0ff) center/100% 1.4px no-repeat;">
+      <div class="om-dv" style="position:absolute; top:0; left:0; width:32%; height:8px; background:linear-gradient(90deg,transparent,#ff2bd6,transparent);"></div>
+    </div>
+
+    <h2 style="font-size:17px; font-weight:700; color:#00f0ff; margin:0 0 12px; letter-spacing:.04em;">&gt; cat writing.md</h2>
+    <ul style="margin:0; padding-left:18px; display:flex; flex-direction:column; gap:7px; font-size:13.5px; color:#8ea0d0;">
+      <li><strong style="color:#e6f6ff;">Fine-tuning Llama for a low-resource language</strong> — corpus curation notes for Tamil physics · <em>coming soon</em></li>
+      <li><strong style="color:#e6f6ff;">When RAG beats a bigger model</strong> — retrieval design for domain-specific tutoring · <em>coming soon</em></li>
+      <li>Certifications and talks: <em style="color:#5f6f9e;">TODO — TryHackMe rank, hackathon placements, certificates</em></li>
+    </ul>
+
+    <sc-if value="{{ showSnake }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top:24px; border:1px dashed #16204a; border-radius:8px; padding:26px 18px; text-align:center; color:#3f4d78; font-size:12px; letter-spacing:.1em;">
+        SNAKE ANIMATION — generated by the Platane/snk workflow on your repo
+      </div>
+    </sc-if>
+
+    <div style="position:relative; height:8px; margin:24px 0; overflow:hidden; background:linear-gradient(#00f0ff,#00f0ff) center/100% 1.4px no-repeat;">
+      <div class="om-dv" style="position:absolute; top:0; left:0; width:32%; height:8px; background:linear-gradient(90deg,transparent,#ff2bd6,transparent);"></div>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="font-size:13.5px; color:#c8d3f5;">mmfmrifath@gmail.com · <a href="#">LinkedIn</a></div>
+      <div style="display:inline-flex; align-items:center; height:32px; padding:0 18px; margin-top:14px; border-radius:3px; background:#00f0ff; color:#05060f; font-size:11.5px; font-weight:700; letter-spacing:.12em;">OPEN TO AI/ML ENGINEERING ROLES</div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showWidgets&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;},&quot;showSnake&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showWidgets: this.props.showWidgets ?? true,
+      showSnake: this.props.showSnake ?? true,
+      status: [
+        { k: "role:", v: "AI Engineer" },
+        { k: "focus:", v: "QLoRA · RAG · agentic systems" },
+        { k: "stack:", v: "Python · LangGraph · FastAPI" },
+        { k: "edu:", v: "BSc CE, Univ. of Ruhuna (final yr)" },
+        { k: "based:", v: "Colombo, LK — UTC+5:30" },
+        { k: "langs:", v: "Tamil · English · Sinhala" },
+        { k: "open_to:", v: "AI/ML roles from Nov 2026" },
+      ],
+      aiStack: ["Python", "Llama 3", "QLoRA / PEFT", "LangGraph", "OpenAI SDK", "FastAPI"],
+      pins: [{ repo: "MathsWithUsama" }, { repo: "ZingApp" }, { repo: "NovaScience" }, { repo: "CalorieTrackerApp" }],
+      projects: [
+        { n: "01", name: "AI Tuition Master", url: "https://github.com/MfmRifath", blurb: "Tamil-medium physics tutor — fine-tuned Llama 3, hybrid RAG, LangGraph agent, knowledge tracing", stack: "Python · LangGraph", status: "WIP" },
+        { n: "02", name: "MathsWithUsama", url: "https://github.com/MfmRifath/MathsWithUsama", blurb: "EdTech platform — gamified practice, real-time quizzes, progress tracking", stack: "Flutter · Firebase", status: "LIVE" },
+        { n: "03", name: "Zing", url: "https://github.com/MfmRifath/ZingApp", blurb: "Commerce app — secure payments, real-time cart, inventory", stack: "React · Node.js", status: "LIVE" },
+        { n: "04", name: "Nova Science", url: "https://github.com/MfmRifath/NovaScience", blurb: "Science publishing with peer-review workflow", stack: "Django · Postgres", status: "LIVE" },
+        { n: "05", name: "Calorie Tracker", url: "https://github.com/MfmRifath/CalorieTrackerApp", blurb: "Intake vs. burn, local SQL persistence, analytics charts", stack: "Flutter · SQL", status: "LIVE" },
+      ],
+      nowLog: [
+        { when: "Jun 2026", what: "Bayesian Knowledge Tracing for adaptive sequencing" },
+        { when: "Apr 2026", what: "Multimodal retrieval over physics diagrams" },
+        { when: "Feb 2026", what: "QLoRA fine-tune of Llama 3, Tamil corpus" },
+      ],
+      experience: [
+        { title: "SE Intern · Paralegal", meta: "6 months", body: "Sri Lankan legislation database from scratch — scraping pipeline, multilingual FastAPI backend, React search frontend, Docker deployment." },
+        { title: "BSc (Hons) Computer Engineering", meta: "Univ. of Ruhuna · final year", body: "FYP: AI Tuition Master." },
+        { title: "Content creator · Nova Learn", meta: "ongoing", body: "Tamil A/L material — Physics, Chemistry, Biology, Combined Maths." },
+      ],
+      toolkit: [
+        { label: "AI / ML", items: ["Python", "PyTorch", "HuggingFace", "QLoRA", "RAG", "LangChain", "LangGraph", "OpenAI SDK", "AutoGen"] },
+        { label: "BACKEND", items: ["FastAPI", "Django", "Spring Boot", "Node.js", "PostgreSQL", "MongoDB", "MySQL", "Firebase"] },
+        { label: "MOBILE & WEB", items: ["Flutter", "Dart", "React", "TypeScript", "Tailwind"] },
+        { label: "INFRA & SECURITY", items: ["Docker", "GH Actions", "Linux", "Git", "Kali", "Wireshark", "Burp Suite"] },
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>
