@@ -123,6 +123,7 @@ class Stats:
     languages: dict[str, int] = field(default_factory=dict)
     calendar: list[tuple[str, int]] = field(default_factory=list)
     showcase: list[Repo] = field(default_factory=list)
+    showcase_source: str = "MOST STARRED"
 
 
 def graphql(token: str, variables: dict) -> dict:
@@ -214,6 +215,7 @@ def collect(token: str, login: str, exclude_langs: frozenset[str] = frozenset())
     fallback = [r for r in every_repo if r.name.casefold() != login.casefold()]
     fallback.sort(key=lambda r: (r.stars, bool(r.description)), reverse=True)
     stats.showcase = pinned or fallback[:4]
+    stats.showcase_source = "PINNED" if pinned else "MOST STARRED"
     return stats
 
 
@@ -417,10 +419,9 @@ def render_repos(s: Stats) -> str:
         )
         body.append("    </g>")
 
-    source = "PINNED" if s.showcase and len(s.showcase) <= 4 else "MOST STARRED"
     body.append(
         f'    <text x="30" y="{h - 20}" font-size="11" fill="{DIM}" letter-spacing="1.4">'
-        f"// {source} · {human(s.stars)} STARS ACROSS {s.repos} REPOS</text>"
+        f"// {s.showcase_source} · {human(s.stars)} STARS ACROSS {s.repos} REPOS</text>"
     )
     return shell(w, h, "> ls ./repos --showcase", "\n".join(body))
 

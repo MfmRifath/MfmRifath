@@ -151,6 +151,17 @@ class TestRenderersProduceValidSvg(unittest.TestCase):
         svg = g.render_repos(sample_stats())
         self.assertIn("No description.", svg)
 
+    def test_showcase_label_reports_actual_source(self):
+        """Regression: the label was derived from `len(showcase) <= 4`, which is
+        always true after slicing, so a fallback list still claimed PINNED."""
+        pinned = sample_stats(showcase_source="PINNED")
+        self.assertIn("// PINNED", g.render_repos(pinned))
+
+        fallback = sample_stats(showcase_source="MOST STARRED")
+        rendered = g.render_repos(fallback)
+        self.assertIn("// MOST STARRED", rendered)
+        self.assertNotIn("// PINNED", rendered)
+
     def test_repo_card_escapes_hostile_metadata(self):
         nasty = g.Repo('a<b&c"d', "</text><script>x</script>", "https://x", 1, 0, "Go")
         svg = g.render_repos(sample_stats(showcase=[nasty]))
