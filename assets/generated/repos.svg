@@ -70,7 +70,7 @@
       <text x="647" y="304" font-size="11.5" fill="#e6f6ff">Dart</text>
       <text x="1150" y="304" text-anchor="end" font-size="11.5" fill="#8ea0d0">★ 2   ⎇ 1</text>
     </g>
-    <text x="30" y="324" font-size="11" fill="#3f4d78" letter-spacing="1.4">// PINNED · 30 STARS ACROSS 43 REPOS</text>
+    <text x="30" y="324" font-size="11" fill="#3f4d78" letter-spacing="1.4">// MOST STARRED · 30 STARS ACROSS 43 REPOS</text>
 
     <rect width="1200" height="344" fill="url(#scan)" opacity=".45"/>
     <g class="sweep"><rect x="-260" y="0" width="260" height="344" fill="url(#swp)" opacity=".12"/></g>
