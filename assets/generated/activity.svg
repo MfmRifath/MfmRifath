@@ -513,6 +513,7 @@
       <rect x="1124" y="125" width="17" height="17" rx="3" fill="#ff2bd6" opacity="1.00" filter="url(#neon)"/>
       <rect x="1124" y="146" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.45"/>
       <rect x="1124" y="167" width="17" height="17" rx="3" fill="#0b1030" opacity="1"/>
+      <rect x="1124" y="188" width="17" height="17" rx="3" fill="#0b1030" opacity="1"/>
     </g>
     <text x="903" y="170" font-size="10.5" fill="#3f4d78" letter-spacing="1.4">LESS</text>
     <rect x="947" y="159" width="15" height="15" rx="3" fill="#0b1030" opacity="1"/>
