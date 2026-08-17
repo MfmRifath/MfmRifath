@@ -508,6 +508,7 @@
     </g>
     <g class="cell" style="animation-delay:832ms">
       <rect x="1124" y="62" width="17" height="17" rx="3" fill="#0b1030" opacity="1"/>
+      <rect x="1124" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1"/>
     </g>
     <text x="903" y="170" font-size="10.5" fill="#3f4d78" letter-spacing="1.4">LESS</text>
     <rect x="947" y="159" width="15" height="15" rx="3" fill="#0b1030" opacity="1"/>
@@ -516,7 +517,7 @@
     <rect x="1013" y="159" width="15" height="15" rx="3" fill="#7c4dff" opacity=".9"/>
     <rect x="1035" y="159" width="15" height="15" rx="3" fill="#ff2bd6" opacity="1"/>
     <text x="1069" y="170" font-size="10.5" fill="#3f4d78" letter-spacing="1.4">MORE</text>
-    <text x="32" y="170" font-size="11" fill="#3f4d78" letter-spacing="1.4">// 117 CONTRIBUTIONS</text>
+    <text x="32" y="170" font-size="11" fill="#3f4d78" letter-spacing="1.4">// 112 CONTRIBUTIONS</text>
 
     <rect width="1173" height="190" fill="url(#scan)" opacity=".45"/>
     <g class="sweep"><rect x="-260" y="0" width="260" height="190" fill="url(#swp)" opacity=".12"/></g>
