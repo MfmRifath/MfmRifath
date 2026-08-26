@@ -510,6 +510,7 @@
       <rect x="1124" y="62" width="17" height="17" rx="3" fill="#00f0ff" opacity="0.52"/>
       <rect x="1124" y="83" width="17" height="17" rx="3" fill="#0b1030" opacity="1"/>
       <rect x="1124" y="104" width="17" height="17" rx="3" fill="#0b1030" opacity="1"/>
+      <rect x="1124" y="125" width="17" height="17" rx="3" fill="#0b1030" opacity="1"/>
     </g>
     <text x="903" y="170" font-size="10.5" fill="#3f4d78" letter-spacing="1.4">LESS</text>
     <rect x="947" y="159" width="15" height="15" rx="3" fill="#0b1030" opacity="1"/>
