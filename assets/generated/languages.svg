@@ -47,13 +47,13 @@
     <g class="rise" style="animation-delay:80ms">
       <text x="30" y="116" font-size="12.5" fill="#e6f6ff">Jupyter Notebook</text>
       <rect x="170" y="106" width="350" height="12" rx="6" fill="#0b1030"/>
-      <rect class="grow" x="170" y="106" width="51.1" height="12" rx="6" fill="#ff2bd6" filter="url(#neon)" style="transform-origin:170px 0;animation-delay:200ms"/>
+      <rect class="grow" x="170" y="106" width="50.9" height="12" rx="6" fill="#ff2bd6" filter="url(#neon)" style="transform-origin:170px 0;animation-delay:200ms"/>
       <text x="570" y="116" text-anchor="end" font-size="11.5" fill="#ff2bd6">14.6%</text>
     </g>
     <g class="rise" style="animation-delay:160ms">
       <text x="30" y="145" font-size="12.5" fill="#e6f6ff">Dart</text>
       <rect x="170" y="135" width="350" height="12" rx="6" fill="#0b1030"/>
-      <rect class="grow" x="170" y="135" width="24.2" height="12" rx="6" fill="#7c4dff" filter="url(#neon)" style="transform-origin:170px 0;animation-delay:280ms"/>
+      <rect class="grow" x="170" y="135" width="24.1" height="12" rx="6" fill="#7c4dff" filter="url(#neon)" style="transform-origin:170px 0;animation-delay:280ms"/>
       <text x="570" y="145" text-anchor="end" font-size="11.5" fill="#7c4dff">6.9%</text>
     </g>
     <g class="rise" style="animation-delay:240ms">
@@ -65,16 +65,16 @@
     <g class="rise" style="animation-delay:320ms">
       <text x="30" y="203" font-size="12.5" fill="#e6f6ff">HTML</text>
       <rect x="170" y="193" width="350" height="12" rx="6" fill="#0b1030"/>
-      <rect class="grow" x="170" y="193" width="12.0" height="12" rx="6" fill="#ffd21e" filter="url(#neon)" style="transform-origin:170px 0;animation-delay:440ms"/>
-      <text x="570" y="203" text-anchor="end" font-size="11.5" fill="#ffd21e">3.4%</text>
+      <rect class="grow" x="170" y="193" width="12.2" height="12" rx="6" fill="#ffd21e" filter="url(#neon)" style="transform-origin:170px 0;animation-delay:440ms"/>
+      <text x="570" y="203" text-anchor="end" font-size="11.5" fill="#ffd21e">3.5%</text>
     </g>
     <g class="rise" style="animation-delay:400ms">
       <text x="30" y="232" font-size="12.5" fill="#e6f6ff">Liquid</text>
       <rect x="170" y="222" width="350" height="12" rx="6" fill="#0b1030"/>
-      <rect class="grow" x="170" y="222" width="7.1" height="12" rx="6" fill="#ff6633" filter="url(#neon)" style="transform-origin:170px 0;animation-delay:520ms"/>
+      <rect class="grow" x="170" y="222" width="7.0" height="12" rx="6" fill="#ff6633" filter="url(#neon)" style="transform-origin:170px 0;animation-delay:520ms"/>
       <text x="570" y="232" text-anchor="end" font-size="11.5" fill="#ff6633">2.0%</text>
     </g>
-    <text x="30" y="238" font-size="11" fill="#3f4d78" letter-spacing="1.4">// BY BYTES ACROSS 45 OWNED REPOS, FORKS EXCLUDED</text>
+    <text x="30" y="238" font-size="11" fill="#3f4d78" letter-spacing="1.4">// BY BYTES ACROSS 46 OWNED REPOS, FORKS EXCLUDED</text>
 
     <rect width="600" height="260" fill="url(#scan)" opacity=".45"/>
     <g class="sweep"><rect x="-260" y="0" width="260" height="260" fill="url(#swp)" opacity=".12"/></g>
