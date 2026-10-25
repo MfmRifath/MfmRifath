@@ -66,7 +66,7 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <g class="reveal" style="animation-delay:1070ms">
 <text x="894" y="346" font-size="11" font-weight="600" letter-spacing="1.6" fill="#FF5A3D">04</text>
 <text x="894" y="378" font-size="21" font-weight="600" fill="#F3F2F2">Graduate</text>
-<text x="894" y="402" font-size="13" fill="#9B9797">BSc (Hons) SE · Univ. of Ruhuna</text>
+<text x="894" y="402" font-size="13" fill="#9B9797">Computer Engineering · Univ. of Ruhuna</text>
 </g>
 <rect x="48" y="426" width="1104" height="1" fill="#3D3C3B"/>
 </svg>

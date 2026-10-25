@@ -24,7 +24,7 @@ HERO_FOCUS = [
     ("LLM fine-tuning", "QLoRA · Llama 3 · PEFT"),
     ("RAG & agents", "LangGraph · hybrid retrieval"),
     ("Real-time ML", "Kafka · FastAPI · MLflow"),
-    ("Graduate", "BSc (Hons) SE · Univ. of Ruhuna"),
+    ("Graduate", "Computer Engineering · Univ. of Ruhuna"),
 ]
 
 SECTIONS = [
