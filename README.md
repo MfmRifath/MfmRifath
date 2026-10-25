@@ -61,7 +61,7 @@ database as a backend engineer. I like problems where the data pipeline is the h
 role:     AI Engineer
 focus:    QLoRA · RAG · agents · real-time ML
 stack:    Python · LangGraph · FastAPI · Kafka · MLflow
-edu:      BSc (Hons) Software Engineering, Univ. of Ruhuna (final yr)
+edu:      BSc (Hons) Software Engineering, Univ. of Ruhuna (graduated)
 based:    Colombo, LK — UTC+5:30
 langs:    Tamil · English · Sinhala
 open_to:  AI/ML roles from Nov 2026
@@ -81,7 +81,7 @@ open_to:  AI/ML roles from Nov 2026
 Sri Lankan legislation database from scratch — scraping pipeline, multilingual FastAPI
 backend, React search frontend, Docker deployment.
 
-**BSc (Hons) Software Engineering** · Univ. of Ruhuna · *final year*
+**BSc (Hons) Software Engineering** · Univ. of Ruhuna · *graduated*
 FYP: AI Tuition Master.
 
 **Content creator** · Nova Learn · *ongoing*
