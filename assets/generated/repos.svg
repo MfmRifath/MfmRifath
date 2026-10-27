@@ -32,7 +32,7 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <g class="reveal" style="animation-delay:120ms">
 <text x="48" y="102" font-size="28" font-weight="800" fill="#EC3013">01</text>
 <text x="142" y="100" font-size="24" font-weight="600" letter-spacing="-0.3" fill="#201E1D">FraudShield</text>
-<text x="1152" y="98" font-size="11" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">PUSHED 2026-10-25</text>
+<text x="1152" y="98" font-size="11" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">PUSHED 2026-10-26</text>
 <text x="142" y="126" font-size="15" fill="#605D5D">Real-time card-fraud scoring: streaming features, a champion/challenger MLOps loop and drift-triggered</text>
 <text x="142" y="146" font-size="15" fill="#605D5D">retraining.</text>
 <text x="1152" y="126" font-size="11" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#201E1D">PYTHON  ·  0 STARS  ·  0 FORKS</text>
