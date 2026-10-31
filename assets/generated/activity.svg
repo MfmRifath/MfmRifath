@@ -518,6 +518,7 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="1136" y="152" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="1136" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1136" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="1136" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <rect x="48" y="246" width="1104" height="1" fill="#D6D4D4"/>
 <text x="993" y="272" font-size="11" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">LESS</text>
