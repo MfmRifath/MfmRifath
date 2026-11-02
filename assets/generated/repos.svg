@@ -27,7 +27,7 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect width="1200" height="524" fill="#F3F2F2"/>
 
 <text x="48" y="38" font-size="11" font-weight="600" letter-spacing="1.6" fill="#201E1D">FEATURED REPOSITORIES</text>
-<text x="1152" y="38" font-size="11" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">39 STARS ACROSS 49 REPOS</text>
+<text x="1152" y="38" font-size="11" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">40 STARS ACROSS 50 REPOS</text>
 <rect x="48" y="52" width="1104" height="2" fill="#201E1D" class="draw"/>
 <g class="reveal" style="animation-delay:120ms">
 <text x="48" y="102" font-size="28" font-weight="800" fill="#EC3013">01</text>
