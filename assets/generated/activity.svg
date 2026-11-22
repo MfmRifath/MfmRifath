@@ -28,18 +28,18 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <text x="48" y="38" font-size="11" font-weight="600" letter-spacing="1.6" fill="#201E1D">CONTRIBUTIONS — LAST 12 MONTHS</text>
 <text x="1152" y="38" font-size="11" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">32 ACTIVE DAYS · BEST STREAK 4 DAYS</text>
 <rect x="48" y="52" width="1104" height="2" fill="#201E1D" class="draw"/>
-<text x="156" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">DEC</text>
-<text x="236" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">JAN</text>
-<text x="316" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">FEB</text>
-<text x="396" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">MAR</text>
-<text x="496" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">APR</text>
-<text x="576" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">MAY</text>
-<text x="676" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">JUN</text>
-<text x="756" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">JUL</text>
-<text x="836" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">AUG</text>
-<text x="936" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">SEP</text>
-<text x="1016" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">OCT</text>
-<text x="1096" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">NOV</text>
+<text x="136" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">DEC</text>
+<text x="216" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">JAN</text>
+<text x="296" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">FEB</text>
+<text x="376" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">MAR</text>
+<text x="476" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">APR</text>
+<text x="556" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">MAY</text>
+<text x="656" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">JUN</text>
+<text x="736" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">JUL</text>
+<text x="816" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">AUG</text>
+<text x="916" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">SEP</text>
+<text x="996" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">OCT</text>
+<text x="1076" y="80" font-size="11" font-weight="600" letter-spacing="1.6" fill="#605D5D">NOV</text>
 <text x="86" y="124" font-size="10" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">MON</text>
 <text x="86" y="164" font-size="10" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">WED</text>
 <text x="86" y="204" font-size="10" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">FRI</text>
@@ -125,8 +125,8 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="256" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:126ms">
-<rect x="276" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="276" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="276" y="92" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="276" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="276" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="276" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="276" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
@@ -134,27 +134,27 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="276" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:140ms">
-<rect x="296" y="92" width="16" height="16" fill="#201E1D" opacity=".25"/>
-<rect x="296" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="296" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="296" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="296" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="296" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="296" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="296" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="296" y="192" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="296" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:154ms">
 <rect x="316" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="316" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="316" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="316" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="316" y="132" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="316" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="316" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="316" y="192" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="316" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="316" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:168ms">
 <rect x="336" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="336" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
-<rect x="336" y="132" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="336" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="336" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="336" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="336" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="336" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
@@ -180,7 +180,7 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 </g>
 <g class="fade" style="animation-delay:210ms">
 <rect x="396" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="396" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="396" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="396" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="396" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="396" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
@@ -189,7 +189,7 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 </g>
 <g class="fade" style="animation-delay:224ms">
 <rect x="416" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="416" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="416" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="416" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="416" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="416" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
@@ -274,7 +274,7 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="596" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="596" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="596" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="596" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="596" y="192" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="596" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:364ms">
@@ -283,7 +283,7 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="616" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="616" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="616" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="616" y="192" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="616" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="616" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:378ms">
@@ -298,8 +298,8 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <g class="fade" style="animation-delay:392ms">
 <rect x="656" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="656" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="656" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="656" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="656" y="132" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="656" y="152" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="656" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="656" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="656" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
@@ -307,8 +307,8 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <g class="fade" style="animation-delay:406ms">
 <rect x="676" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="676" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="676" y="132" width="16" height="16" fill="#201E1D" opacity=".25"/>
-<rect x="676" y="152" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="676" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="676" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="676" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="676" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="676" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
@@ -359,35 +359,35 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="776" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:490ms">
-<rect x="796" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="796" y="92" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="796" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="796" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="796" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="796" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="796" y="132" width="16" height="16" fill="#201E1D" opacity=".5"/>
+<rect x="796" y="152" width="16" height="16" fill="#201E1D" opacity=".5"/>
+<rect x="796" y="172" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="796" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="796" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:504ms">
 <rect x="816" y="92" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="816" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="816" y="132" width="16" height="16" fill="#201E1D" opacity=".5"/>
-<rect x="816" y="152" width="16" height="16" fill="#201E1D" opacity=".5"/>
-<rect x="816" y="172" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="816" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="816" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="816" y="172" width="16" height="16" fill="#201E1D" opacity=".78"/>
 <rect x="816" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="816" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:518ms">
-<rect x="836" y="92" width="16" height="16" fill="#201E1D" opacity=".25"/>
-<rect x="836" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="836" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="836" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="836" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="836" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="836" y="172" width="16" height="16" fill="#201E1D" opacity=".78"/>
+<rect x="836" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="836" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="836" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:532ms">
 <rect x="856" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="856" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="856" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="856" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="856" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="856" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
@@ -395,22 +395,22 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="856" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:546ms">
-<rect x="876" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="876" y="92" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="876" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="876" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="876" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="876" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="876" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="876" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="876" y="212" width="16" height="16" fill="#201E1D" opacity=".25"/>
 </g>
 <g class="fade" style="animation-delay:560ms">
-<rect x="896" y="92" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="896" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="896" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="896" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="896" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="896" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="896" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="896" y="212" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="896" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:574ms">
 <rect x="916" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
@@ -426,8 +426,8 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="936" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="936" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="936" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="936" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="936" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="936" y="172" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="936" y="192" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="936" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:602ms">
@@ -435,8 +435,8 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="956" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="956" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="956" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="956" y="172" width="16" height="16" fill="#201E1D" opacity=".25"/>
-<rect x="956" y="192" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="956" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="956" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="956" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:616ms">
@@ -461,40 +461,40 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 <rect x="1016" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1016" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1016" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1016" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1016" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="1016" y="152" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="1016" y="172" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="1016" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1016" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:658ms">
-<rect x="1036" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1036" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="1036" y="92" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="1036" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="1036" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1036" y="152" width="16" height="16" fill="#201E1D" opacity=".25"/>
-<rect x="1036" y="172" width="16" height="16" fill="#201E1D" opacity=".25"/>
-<rect x="1036" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1036" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="1036" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="1036" y="192" width="16" height="16" fill="#201E1D" opacity=".78"/>
+<rect x="1036" y="212" width="16" height="16" fill="#EC3013" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:672ms">
-<rect x="1056" y="92" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="1056" y="92" width="16" height="16" fill="#201E1D" opacity=".78"/>
 <rect x="1056" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="1056" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1056" y="152" width="16" height="16" fill="#201E1D" opacity=".25"/>
 <rect x="1056" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1056" y="192" width="16" height="16" fill="#201E1D" opacity=".78"/>
-<rect x="1056" y="212" width="16" height="16" fill="#EC3013" opacity="1"/>
+<rect x="1056" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
+<rect x="1056" y="212" width="16" height="16" fill="#201E1D" opacity=".25"/>
 </g>
 <g class="fade" style="animation-delay:686ms">
-<rect x="1076" y="92" width="16" height="16" fill="#201E1D" opacity=".78"/>
-<rect x="1076" y="112" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="1076" y="92" width="16" height="16" fill="#201E1D" opacity=".5"/>
+<rect x="1076" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1076" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1076" y="152" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="1076" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1076" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1076" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1076" y="212" width="16" height="16" fill="#201E1D" opacity=".25"/>
+<rect x="1076" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <g class="fade" style="animation-delay:700ms">
-<rect x="1096" y="92" width="16" height="16" fill="#201E1D" opacity=".5"/>
+<rect x="1096" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1096" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1096" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 <rect x="1096" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
@@ -513,12 +513,6 @@ text { font-family:Archivo,'Helvetica Neue',Helvetica,Arial,sans-serif; font-fea
 </g>
 <g class="fade" style="animation-delay:728ms">
 <rect x="1136" y="92" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1136" y="112" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1136" y="132" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1136" y="152" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1136" y="172" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1136" y="192" width="16" height="16" fill="#EAE9E9" opacity="1"/>
-<rect x="1136" y="212" width="16" height="16" fill="#EAE9E9" opacity="1"/>
 </g>
 <rect x="48" y="246" width="1104" height="1" fill="#D6D4D4"/>
 <text x="993" y="272" font-size="11" font-weight="600" text-anchor="end" letter-spacing="1.6" fill="#605D5D">LESS</text>
